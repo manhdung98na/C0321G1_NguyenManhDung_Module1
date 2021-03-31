@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký học viên</title>
+    <style>
+        body{
+            background-color: #fffda9;
+        }
+        table{
+            width: fit-content;
+        }
+        th{
+            background-color: #9cffe4;
+            color: blue;
+            text-align: left;
+        }
+        td{
+            color: #0722aa;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <form name="formDangKy" method="" action="">
+        <table border="0">
+            <tr>
+                <th colspan="4">ĐĂNG KÝ HỌC VIÊN</th>
+            </tr>
+            <tr>
+                <td><span>Họ và tên</span></td>
+                <td colspan="3"><input type="text" name="yourName"></td>
+            </tr>
+            <tr>
+                <td><span>Ngày sinh</span></td>
+                <td colspan="3"><input type="text" name="dateOfBirth"></td>
+            </tr>
+            <tr>
+                <td><span>Giới tính</span></td>
+                <td><input type="radio" name="gender" value="Nam">Nam</td>
+                <td colspan="2"><input type="radio" name="gender" value="Nữ">Nữ</td>
+            </tr>
+            <tr>
+                <td><span>Địa chỉ</span></td>
+                <td colspan="3"><textarea name="address"></textarea></td>
+            </tr>
+            <tr>
+                <td><span>Lớp</span></td>
+                <td colspan="3"><select name="classroom" required="required">
+                    <option>--Chọn lớp--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><span>Email</span></td>
+                <td colspan="3"><input type="email" name="email"></td>
+            </tr>
+            <tr><td><span>Điện thoại</span></td>
+                <td colspan="3"><input type="number" name="phoneNumber"></td></tr>
+            <tr>
+                <td colspan="2" style="width: 50%; text-align: right"><input type="submit"  name="btSubmit" value="Đăng ký"></td>
+                <td colspan="2" style="width: 50%"><input type="reset"  name="btReset" value="Nhập lại"></td>
+            </tr>
+        </table>
+    </form>
+</center>
+</body>
+</html>

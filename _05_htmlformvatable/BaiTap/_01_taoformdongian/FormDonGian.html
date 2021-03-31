@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Đơn Giản</title>
+    <style>
+        .formdongian{
+            width: fit-content;
+        }
+    </style>
+</head>
+<body style="background-color: cadetblue">
+<center>
+<div class="formdongian">
+    <form style="background-color: white; " name="form_don_gian"  method="POST" action="">
+        <table border="0">
+            <tr>
+                <th colspan="4" style="background-color: red; color: white">SỞ THÍCH CỦA BẠN</th>
+            </tr>
+            <tr>
+                <td style="width: 70px; text-align: right">Họ và Tên</td>
+                <td colspan="3"><input TYPE="text" name="yourName"></td>
+            </tr>
+            <tr>
+                <td style="width: 70px; text-align: right">Email</td>
+                <td colspan="3"><input TYPE="text" name="email"></td>
+            </tr>
+            <tr>
+                <td style="width: 70px; text-align: right">Sở thích</td>
+                <td><input TYPE="checkbox" name="hobby">Thể thao</td>
+                <td><input TYPE="checkbox" name="hobby">Âm nhạc</td>
+                <td><input TYPE="checkbox" name="hobby">Đọc sách</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input TYPE="checkbox" name="hobby">Lướt web</td>
+                <td><input TYPE="checkbox" name="hobby">Chơi game</td>
+                <td><input TYPE="checkbox" name="hobby">Điện ảnh</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input TYPE="checkbox" name="hobby">Du lịch</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: right">
+                    <input type="submit" name="btSubmit" value="Gửi thông tin">
+                </td>
+                <td colspan="2" style="text-align: left">
+                    <input type="reset" name="btReset" value="Nhập lại">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</center>
+</body>
+</html>
