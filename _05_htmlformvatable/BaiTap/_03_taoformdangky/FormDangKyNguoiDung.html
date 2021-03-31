@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký người dùng</title>
+    <style>
+        .alignCenter{
+            display: block;
+            text-align: -webkit-center;
+        }
+        table{
+            mso-cellspacing: 0px;
+        }
+        td{
+            padding-bottom: 10px;
+        }
+        th{
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+<div class="alignCenter">
+    <form method="post" name="formDangKy" action="http://demo.codegym.vn/6/registration_form/register.php">
+        <table border="0">
+            <h1>FORM ĐĂNG KÝ NGƯỜI DÙNG</h1>
+            <tr>
+                <th>Họ và tên:</th>
+            </tr>
+            <tr>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <th>Email:</th>
+            </tr>
+            <tr>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <th>Số điện thoại:</th>
+            </tr>
+            <tr>
+                <td><input type="tel" name="phone"></td>
+            </tr>
+            <tr>
+                <th>Giới tính:</th>
+            </tr>
+            <tr>
+                <td><input type="radio" name="gender" value="Nam">
+                    <span style="padding-right: 30px">Nam</span>
+                    <input type="radio" name="gender" value="Nữ">
+                    <span>Nữ</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="btSubmit" value="SUBMIT">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
