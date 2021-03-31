@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form lấy survey khách hàng</title>
+    <script language="JavaScript">
+    </script>
+    <style>
+        form{
+            width: fit-content;
+        }
+        .fitWidth{
+            width: 100%;
+        }
+        .bold{
+            font-weight: bold;
+        }
+        td{
+            width: 25px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
+    
+</head>
+<body>
+<form name="formLaySurvey" method="post" action="">
+    <h2>Market Research Survey</h2>
+    <p> Please take a few moments to complete this satisfaction survey. </p>
+    <ul style="list-style-type: none">
+        <li>
+            <label class="bold" for="yourAge">
+                What is your age?
+            </label>
+            <div>
+                <select name="yourAge" class="fitWidth" id="yourAge" onclick="changeBackgroundColor()">
+                    <option value="18-24">
+                        18-24
+                    </option>
+                    <option value="25-34">
+                        25-34
+                    </option>
+                    <option value="35-50">
+                        35-50
+                    </option>
+                    <option value="50+">
+                        50+
+                    </option>
+                </select>
+            </div>
+        </li>
+
+        <li>
+            <label class="bold" for="yourIncome">
+                What is your yearly income range?
+            </label>
+            <div>
+                <select id="yourIncome" name="yourIncome" class="fitWidth">
+                    <option value="$0 - $25,000">
+                        $0 - $25,000
+                    </option>
+                    <option value="$25,001 - $50,000">
+                        $25,001 - $50,000
+                    </option>
+                    <option value="$50,001 - $100,000">
+                        $50,001 - $100,000
+                    </option>
+                    <option value="$100,000+">
+                        $100,000+
+                    </option>
+                </select>
+            </div>
+        </li>
+
+
+        <li>
+            <label class="bold">Gender Identity</label><br>
+            <input name="gender" type="radio" value="Male">
+            <label>Male</label><br>
+            <input name="gender" type="radio" value="Female">
+            <label>Female</label><br>
+            <input name="gender" type="radio" value="Nonbinary">
+            <label>Nonbinary</label><br>
+            <input name="gender" type="radio" value="other">
+            <label>Other</label><br>
+            <span>&emsp;&emsp;</span><input name="gender" type="text">
+        </li>
+
+        <li>
+            <label class="bold">
+                Which of the following products have your purchased in the last 2 months. Please check all that apply.
+            </label><br>
+            <span><input type="checkbox" name="products"> Product 1</span><br>
+            <span><input type="checkbox" name="products"> Product 2</span><br>
+            <span><input type="checkbox" name="products"> Product 3</span><br>
+        </li>
+
+
+        <li>
+            <label class="bold">
+                How often would you use our new product?
+            </label><br>
+            <span><input type="radio" name="times"> Daily</span><br>
+            <span><input type="radio" name="times"> Weekly</span><br>
+            <span><input type="radio" name="times"> Monthly</span><br>
+        </li>
+
+
+
+        <li>
+            <label class="bold">
+                What would you pay for the new product?
+            </label><br>
+            <span>$</span>
+            <span>
+		        <input type="text" name="dolar" value="" size="10">
+                <span>.</span>
+		        <input type="text" name="cent" value="" size="2" maxlength="2">
+            </span><br>
+            <span><span>&ensp;&ensp;&ensp;&ensp;</span>
+                <label>Dollars</label>
+                <span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</span>
+                <label>Cents</label>
+            </span>
+        </li>
+
+        <li>
+            <label class="bold">
+                What features would you like to see in the new product.
+            </label>
+            <textarea class="fitWidth" name="textArea" rows="10" cols="50" ></textarea>
+        </li>
+
+        <li>
+            <table cellspacing="0">
+                <p>
+                    Please rate your level of agreement with the following statements.
+                </p>
+                <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <td>Strongly Disagree</td>
+                    <td>Disagree</td>
+                    <td>Agree</td>
+                    <td>Strongly Agree</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>
+                        <label>
+                            Our products are priced fairly.
+                        </label>
+                    </th>
+                    <td>
+                        <input name="radio1" type="radio" value="1">
+                        <label>1</label>
+                    </td>
+                    <td>
+                        <input name="radio1" type="radio" value="2">
+                        <label>2</label>
+                    </td>
+                    <td>
+                        <input name="radio1" type="radio" value="3">
+                        <label>3</label>
+                    </td>
+                    <td>
+                        <input name="radio1" type="radio" value="4">
+                        <label>4</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label>
+                            Our products are high quality.
+                        </label>
+                    </th>
+                    <td>
+                        <input name="radio2" type="radio" value="1">
+                        <label>1</label>
+                    </td>
+                    <td>
+                        <input name="radio2" type="radio" value="2">
+                        <label>2</label>
+                    </td>
+                    <td>
+                        <input name="radio2" type="radio" value="3">
+                        <label>3</label>
+                    </td>
+                    <td>
+                        <input name="radio2" type="radio" value="4">
+                        <label>4</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label>
+                            You would recommend our product to a friend or coworker.
+                        </label>
+                    </th>
+                    <td>
+                        <input name="radio3" type="radio" value="1">
+                        <label>1</label>
+                    </td>
+                    <td>
+                        <input name="radio3" type="radio" value="2">
+                        <label>2</label>
+                    </td>
+                    <td>
+                        <input name="radio3" type="radio" value="3">
+                        <label>3</label>
+                    </td>
+                    <td>
+                        <input name="radio3" type="radio" value="4">
+                        <label>4</label>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </li>
+
+        <li>
+            <input name="btSubmit" type="submit" value="Submit">
+        </li>
+    </ul>
+</form>
+</body>
+</html>
