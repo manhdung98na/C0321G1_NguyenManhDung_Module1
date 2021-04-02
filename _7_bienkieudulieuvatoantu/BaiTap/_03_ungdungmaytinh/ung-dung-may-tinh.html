@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+    <style>
+        body {
+            margin-top: 50px;
+            display: block;
+            text-align: -webkit-center;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <form name="form" action="" method="post">
+        <table cellspacing="0" ; cellpadding="8px">
+            <caption style="font-weight: bold; text-align: left; font-size: larger">Calculator</caption>
+            <!--            Nhập 2 số a b-->
+            <tr>
+                <td colspan="2">
+                    <input type="text" name="a" id="a">
+                </td>
+                <td colspan="2">
+                    <input type="text" name="b" id="b">
+                </td>
+            </tr>
+            <!--            4 button-->
+            <tr>
+                <td>
+                    <input type="button" name="btAdd" id="btAdd" value="Addition(+)" onclick="Calculate('+')">
+                </td>
+                <td>
+                    <input type="button" name="btSub" id="btSub" value="Subtraction(-)" onclick="Calculate('-')">
+                </td>
+                <td>
+                    <input type="button" name="btMulti" id="btMulti" value="Multiplication(*)" onclick="Calculate('*')">
+                </td>
+                <td>
+                    <input type="button" name="btDivi" id="btDivi" value="Division(/)" onclick="Calculate('/')">
+                </td>
+            </tr>
+            <!--            hiển thị kết quả-->
+            <tr>
+                <td colspan="4">
+                    <span style="font-size: larger;">Result: </span>
+                    <span id="result" style="padding-left: 8px"></span>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+<script>
+    function Calculate(operator) {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        try {
+            if (a == "" || a == "") throw "is empty";
+            if (isNaN(a) || isNaN(b)) throw "is not a number";
+            a = Number(a);
+            b = Number(b);
+            let ketQua;
+            switch (operator) {
+                case "+":
+                    ketQua = a + b;
+                    break;
+                case "-":
+                    ketQua = a - b;
+                    break;
+                case "*":
+                    ketQua = a * b;
+                    break;
+                case "/":
+                    if (b == 0) throw "can not divide by 0"
+                    ketQua = a / b;
+                    break;
+            }
+            document.getElementById("result").innerText = ketQua.toString();
+        } catch (e) {
+            document.getElementById("result").innerText = "Input " + e;
+        }
+
+
+    }
+</script>
+</html>
