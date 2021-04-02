@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+    <style>
+        body {
+            margin-top: 50px;
+            display: block;
+            text-align: -webkit-center;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <span>Điểm vật lý:</span>
+    <input type="text" id="diemVatLy" placeholder="Nhập điểm môn Vật lý">
+    <span>Điểm hóa học:</span>
+    <input type="text" id="diemHoaHoc" placeholder="Nhập điểm môn Hóa học">
+    <span>Điểm sinh học:</span>
+    <input type="text" id="diemSinhHoc" placeholder="Nhập điểm môn Sinh học">
+    <button onclick="TinhDiem()">Tính điểm</button>
+</div>
+</body>
+<script>
+    function TinhDiem() {
+        let vl, hh, sh;
+        vl = parseFloat(document.getElementById('diemVatLy').value);
+        hh = parseFloat(document.getElementById('diemHoaHoc').value);
+        sh = parseFloat(document.getElementById('diemSinhHoc').value);
+        let tong = vl + hh + sh;
+        alert("Tổng điểm: " + tong + "\nĐiểm trung bình: " + (tong / 3));
+    }
+</script>
+</html>
