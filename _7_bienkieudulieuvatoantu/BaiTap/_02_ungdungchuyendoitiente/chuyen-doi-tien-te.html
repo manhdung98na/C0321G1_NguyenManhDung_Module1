@@ -64,35 +64,58 @@
         let amount = parseFloat(document.getElementById("amount").value);
         let fromCur = document.getElementById("fromCur").value;
         let toCur = document.getElementById("toCur").value;
+        console.log(fromCur + " " +toCur);
         switch (fromCur) {
             case "VND":
-                if (toCur == "VND"){
-                    document.getElementById("result").innerText = amount.toString();
-                }else {
-                    if (toCur == "USD"){
-                        document.getElementById("result").innerText = (amount/23000).toString();
-                    }else document.getElementById("result").innerText = (amount*0.0000369317).toString();
+                if (toCur == "VND") {
+                    document.getElementById("result").innerText = tachChuoi(amount.toString());
+                } else {
+                    if (toCur == "USD") {
+                        document.getElementById("result").innerText = tachChuoi((amount / 23000).toString());
+                    } else document.getElementById("result").innerText = tachChuoi((amount * 0.0000369317).toString());
                 }
                 break;
             case "USD":
-                if (toCur == "USD"){
-                    document.getElementById("result").innerText = amount.toString();
-                }else {
-                    if (toCur == "VND"){
-                        document.getElementById("result").innerText = (amount*23000).toString();
-                    }else document.getElementById("result").innerText = (amount*0.84889).toString();
+                if (toCur == "USD") {
+                    document.getElementById("result").innerText = tachChuoi(amount.toString());
+                } else {
+                    if (toCur == "VND") {
+                        document.getElementById("result").innerText = tachChuoi((amount * 23000).toString());
+                    } else document.getElementById("result").innerText = tachChuoi((amount * 0.84889).toString());
                 }
                 break;
             case "EURO":
-                if (toCur == "EURO"){
-                    document.getElementById("result").innerText = amount.toString();
-                }else {
-                    if (toCur == "VND"){
-                        document.getElementById("result").innerText = (amount*27076.98).toString();
-                    }else document.getElementById("result").innerText = (amount*1.1780).toString();
+                if (toCur == "EURO") {
+                    document.getElementById("result").innerText = tachChuoi(amount.toString());
+                } else {
+                    if (toCur == "VND") {
+                        document.getElementById("result").innerText = tachChuoi((amount * 27076.98).toString());
+                    } else document.getElementById("result").innerText = tachChuoi((amount * 1.1780).toString());
                 }
                 break;
         }
+    }
+
+    function tachChuoi(str) {
+        console.log(str);
+        let temp = parseFloat(str);
+        let result = "";
+        if (Number.isInteger(temp)) {
+            for (let i = str.length; i >= 0; i = i - 3) {
+                result = " " + str.substring(i - 3, i) + result;
+            }
+        }else {
+            let index = str.indexOf(".")
+            console.log(index);
+            for (let i = index; i>=0; i=i-3){
+                result = " " + str.substring(i - 3, i) + result;
+            }
+            result = result + ".";
+            for (let i = index+1; i<=str.length; i=i+3){
+                result = result + str.substring(i, i+3) + " ";
+            }
+        }
+        return result;
     }
 </script>
 </html>
