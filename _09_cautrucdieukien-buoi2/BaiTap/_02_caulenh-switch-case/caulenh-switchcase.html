@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính số ngày của tháng</title>
+</head>
+<body>
+<div style="text-align: -webkit-center; padding-top: 50px;">
+    <form name="form1" action="" method="post">
+        <input type="number" id="thang" placeholder="Nhập tháng 1-12">
+        <input type="button" value="Tính số ngày" id="button" name="button" onclick="countDay()">
+        <br>
+        <span id = "result"></span>
+    </form>
+</div>
+</body>
+<script>
+    function countDay() {
+        let thang = parseInt(document.getElementById("thang").value);
+        let result;
+        switch (thang) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                result = "Tháng " + thang + " có 31 ngày";
+                document.getElementById("result").innerText = result;
+                break;
+            case 2:
+                document.getElementById("result").innerText = "Tháng 2 có 28 hoặc 29 ngày";
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                document.getElementById('result').innerHTML = "Tháng " + thang + " có 30 ngày";
+                break;
+            default:
+                document.getElementById('result').innerText = "Nhập tháng từ 1 -> 12";
+                break;
+        }
+    }
+</script>
+</html>
