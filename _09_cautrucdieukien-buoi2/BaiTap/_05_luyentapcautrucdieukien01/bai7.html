@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+
+</body>
+<script>
+    let phut = parseFloat(prompt("Số phút đã gọi: "));
+    let giay = parseFloat(prompt("Số giây đã gọi: "));
+    let time = phut + giay/60;
+    if (phut < 5) alert("Cước điện thoại = " + (time * 1000));
+    else if (phut < 7) alert("Cước điện thoại = " + (time * 900));
+    else alert("Cước điện thoại = " + (time * 800));
+</script>
+</html>

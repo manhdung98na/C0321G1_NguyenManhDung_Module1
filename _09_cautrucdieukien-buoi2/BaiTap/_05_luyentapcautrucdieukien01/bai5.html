@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+
+</body>
+<script>
+    let diemKiemTra = parseInt(prompt("điểm bài kiểm tra = "));
+    let diemGiuaKy = parseInt(prompt("điểm giữa kỳ = "));
+    let diemCuoiKy = parseInt(prompt("điểm cuối kỳ = "));
+    let tongDiem = diemKiemTra * 0.2 + diemCuoiKy * 0.2 + diemCuoiKy * 0.6;
+    console.log(tongDiem);
+    if (tongDiem > 10){
+        alert("Nhập lại điểm cho chính xác");
+    }else {
+        if (tongDiem >= 9) alert("Xuất sắc");
+        else if (tongDiem >= 8) alert("Giỏi");
+        else if (tongDiem >= 7) alert("Khá");
+        else if (tongDiem >= 5) alert("Trung bình");
+        else alert("Yếu");
+    }
+</script>
+</html>
