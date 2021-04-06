@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập Good-Fast-Cheap</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+<div>
+    <table cellspacing="0" cellpadding="8px">
+        <tr>
+            <td>
+                <label class="toggle1" for="good">
+                    <input type="checkbox" id="good" onclick="turnOnGood()">
+                    <div class="slider"></div>
+                </label>
+            </td>
+            <td>
+                <span><b>Good</b></span>
+            </td>
+        </tr>
+
+    <tr>
+        <td>
+            <label class="toggle2" for="cheap">
+                <input type="checkbox" id="cheap" onclick="turnOnCheap()">
+                <div class="slider"></div>
+            </label>
+        </td>
+        <td>
+            <span><b>Cheap</b></span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label class="toggle3" for="fast">
+                <input type="checkbox" id="fast" onclick="turnOnFast()">
+                <div class="slider"></div>
+            </label>
+        </td>
+        <td>
+            <span><b>Fast</b></span>
+        </td>
+    </tr>
+    </table>
+</div>
+</body>
+<script>
+    function turnOnGood() {
+        var isGood = document.getElementById("good").checked;
+        var isCheap = document.getElementById("cheap").checked;
+        var isFast = document.getElementById("fast").checked;
+        if (isCheap && isFast) {
+            if (Math.random() < 0.5) {
+                document.getElementById("cheap").checked = false;
+            } else {
+                document.getElementById("fast").checked = false;
+            }
+        }
+    }
+
+    function turnOnCheap() {
+        var isGood = document.getElementById("good").checked;
+        var isCheap = document.getElementById("cheap").checked;
+        var isFast = document.getElementById("fast").checked;
+        if (isGood && isFast) {
+            if (Math.random() < 0.5) {
+                document.getElementById("good").checked = false;
+            } else {
+                document.getElementById("fast").checked = false;
+            }
+        }
+    }
+
+    function turnOnFast() {
+        var isGood = document.getElementById("good").checked;
+        var isCheap = document.getElementById("cheap").checked;
+        var isFast = document.getElementById("fast").checked;
+        console.log(isGood,isCheap,isFast);
+        if (isGood && isCheap) {
+            if (Math.random() < 0.5) {
+                document.getElementById("cheap").checked = false
+            } else {
+                document.getElementById("fast").checked = false
+            }
+        }
+    }
+</script>
+</html>
