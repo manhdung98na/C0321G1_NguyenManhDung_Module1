@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cải tiến bài tập 3 thành máy tính google</title>
+    <style>
+        body {
+            display: block;
+            text-align: -webkit-center;
+            padding-top: 50px;
+        }
+
+        td {
+            border-radius: 3px;
+            width: 55px;
+            height: 25px;
+        }
+
+        .button {
+            width: 100%;
+            height: 100%;
+            background-color: #d4d4d4;
+            outline: none;
+            border: none;
+            text-align: center;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .number {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(175, 214, 207, 0.6);
+            outline: none;
+            border: none;
+            text-align: center;
+            display: inline-block;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <form name="formCalculator" method="post" action="">
+        <table border="0" cellspacing="10px" style="text-align: center">
+            <!--            result-->
+            <tr>
+                <td colspan="4">
+                    <input style="background-color: white; width: 100%; height: 25px; text-align: right" name="result"
+                           id="result"
+                           disabled>
+                </td>
+            </tr>
+
+            <!--            ( ) % AC-->
+            <tr>
+                <td>
+                    <input type="button" value="(" id="btMoNgoac" class="button" onclick="nhapVao('(')">
+                </td>
+                <td>
+                    <input type="button" value=")" id="btDongNgoac" class="button" onclick="nhapVao(')')">
+                </td>
+                <td>
+                    <input type="button" value="%" id="btMod" class="button" onclick="nhapVao('%')">
+                </td>
+                <td>
+                    <input type="reset" value="AC" id="btClear" class="button">
+                </td>
+            </tr>
+
+            <!--            7 8 9 ÷ -->
+            <tr>
+                <td>
+                    <input type="button" value="7" id="bt7" class="number" onclick="nhapVao('7')">
+                </td>
+                <td>
+                    <input type="button" value="8" id="bt8" class="number" onclick="nhapVao('8')">
+                </td>
+                <td>
+                    <input type="button" value="9" id="bt9" class="number" onclick="nhapVao('9')">
+                </td>
+                <td>
+                    <input type="button" value="÷" id="btChia" class="button" onclick="nhapVao('÷')">
+                </td>
+            </tr>
+
+            <!--            4 5 6 x -->
+            <tr>
+                <td>
+                    <input type="button" value="4" id="bt4" class="number" onclick="nhapVao('4')">
+                </td>
+                <td>
+                    <input type="button" value="5" id="bt5" class="number" onclick="nhapVao('5')">
+                </td>
+                <td>
+                    <input type="button" value="6" id="bt6" class="number" onclick="nhapVao('6')">
+                </td>
+                <td>
+                    <input type="button" value="x" id="btNhan" class="button" onclick="nhapVao('x')">
+                </td>
+            </tr>
+
+            <!--            1 2 3 - -->
+            <tr>
+                <td>
+                    <input type="button" value="1" id="bt1" class="number" onclick="nhapVao('1')">
+                </td>
+                <td>
+                    <input type="button" value="2" id="bt2" class="number" onclick="nhapVao('2')">
+                </td>
+                <td>
+                    <input type="button" value="3" id="bt3" class="number" onclick="nhapVao('3')">
+                </td>
+                <td>
+                    <input type="button" value="-" id="btTru" class="button" onclick="nhapVao('-')">
+                </td>
+            </tr>
+
+            <!--            0 . = + -->
+            <tr>
+                <td>
+                    <input type="button" value="0" id="bt0" class="number" onclick="nhapVao('0')">
+                </td>
+                <td>
+                    <input type="button" value="." id="btDot" class="button" onclick="nhapVao('.')">
+                </td>
+                <td>
+                    <input type="button" value="=" id="btCalcu" class="button"
+                           onclick="Calculator(document.getElementById('result').value)">
+                </td>
+                <td>
+                    <input type="button" value="+" id="btCong" class="button" onclick="nhapVao('+')">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+<script>
+    //Hàm nhập vào
+    function nhapVao(x) {
+        let oldInput = document.getElementById("result").value;
+        oldInput += x.toString();
+        document.formCalculator.result.value = oldInput;
+    }
+    function Calculator(string) {
+        let inputString = string.toString();
+        let result1 = calcuTrongNgoac(inputString); //trả về chuỗi ko có dấu ngoặc, chỉ có + - x ÷ %
+        let result2 = calcuNhanChiaMod(result1); // trả về chuỗi chỉ còn + -
+        let resultCuoiCung = calcuCongTru(result2);
+        console.log(resultCuoiCung);
+        document.getElementById('result').value = resultCuoiCung.toString();
+    }
+
+    //Hàm tính toán trong ngoặc trước, ko tính cộng trừ nhân chia ngoài ngoặc tròn
+    // => trả về string là biểu thức sau khi tính toán trong ngoặc
+    function calcuTrongNgoac(string) {
+        let inputStr = string.toString();
+        let tempStr = "";
+        let i = 0;
+        while (i <= inputStr.length - 1) {
+            let kiTu = inputStr.substring(i, i + 1);
+            if (kiTu == '(') { //kí tự ( có index là i
+                //Khối lệnh trong này sẽ xử lý chuỗi trong ngoặc
+                let j = i + 1;
+                let tempStr2 = "";
+                while (j <= inputStr.length - 1) {
+                    let kiTu2 = inputStr.substring(j, j + 1); //xét duyệt từng kí tự trong dấu ngoặc
+                    if (kiTu2 != ')') {
+                        tempStr2 += kiTu2; //chuỗi trong ngoặc
+                        j++;
+                    } else {
+                        tempStr += calcuCongTru(calcuNhanChiaMod(tempStr2));
+                        tempStr2 = "";
+                        i = j + 1;
+                        break;
+                    }
+                }
+            } else {
+                tempStr += kiTu;
+                i++
+            }
+        }
+        return tempStr;
+    }
+
+    //Xử lí chuỗi để thực hiện phép * / % trước, ko tính toán + -
+    function calcuNhanChiaMod(string) {
+        let inputStr = string.toString();
+        let result = "";
+        let i = 0;
+        let soHang = "";
+        while (i <= inputStr.length - 1) {
+            let kiTu = inputStr.substring(i, i + 1);
+            let isNumber = kiTu >= 0 && kiTu <= 9;
+            if (isNumber) { //là kí tự số
+                soHang += kiTu;
+                i++;
+            } else {
+                if (kiTu == '+' || kiTu == '-') {
+                    result += soHang;
+                    result += kiTu;
+                    soHang = "";
+                    i++;
+                } else {
+                    let soHang2 = parseInt(inputStr.substring(i + 1, inputStr.length));
+                    let tempString = soHang + kiTu + soHang2;
+                    soHang = tinhToan2SoHang(tempString);
+                    i += soHang2.toString().length + 1;
+                    soHang2 = "";
+                }
+            }
+        }
+        result += soHang;
+        return calcuCongTru(result);
+    }
+
+    //Xử lí chuỗi để thực hiện cộng trừ
+    function calcuCongTru(string) {
+        let inputStr = string.toString();
+        let result = parseInt(inputStr), soHang2 = "";
+        let i = result.toString().length;
+        while (i <= inputStr.length) {
+            let kiTu = inputStr.substring(i, i + 1);
+            let isNumber = kiTu >= 0 && kiTu <= 9;
+            if (isNumber) {
+                soHang2 += kiTu;
+                i++;
+            } else {
+                i++;
+                soHang2 = parseInt(inputStr.substring(i, inputStr.length));
+                if (kiTu == '+') {
+                    result += soHang2;
+                } else {
+                    result -= soHang2;
+                }
+                i += soHang2.toString().length;
+            }
+        }
+        return result;
+    }
+
+    //tính toán chuỗi string bao gồm 2 số hạng và 1 operator
+    function tinhToan2SoHang(string) {
+        //tách chuỗi
+        let first, second, operator;
+        first = parseInt(string);
+        operator = string.toString().substring(first.toString().length, first.toString().length + 1);
+        second = parseInt(string.toString().substring(first.toString().length + 1, string.toString().length));
+        //xét operator và tính toán
+        switch (operator) {
+            case '+':
+                return (first + second).toString();
+            case '-':
+                return (first - second).toString();
+            case 'x':
+                return (first * second).toString();
+            case '÷':
+                return (first / second).toString();
+            case '%':
+                return (first % second).toString();
+        }
+    }
+</script>
+</html>
