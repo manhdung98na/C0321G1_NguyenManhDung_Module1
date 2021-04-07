@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 11</title>
+</head>
+<body>
+
+</body>
+<script>
+    let thuNhap, thueSuat, thueTNCN;
+    do {
+        thuNhap = parseInt(prompt("Tổng thu nhập 1 tháng (triệu VND): "));
+    } while (thuNhap <= 0);
+    if (thuNhap <= 5) {
+        thueSuat = 0.05;
+        thueTNCN = thueSuat * thuNhap;
+    } else if (thuNhap <= 10) {
+        thueSuat = 0.1;
+        thueTNCN = thueSuat * thuNhap - 0.25;
+    } else if (thuNhap <= 18) {
+        thueSuat = 0.15;
+        thueTNCN = thueSuat * thuNhap - 0.75;
+    } else if (thuNhap <= 32) {
+        thueSuat = 0.2;
+        thueTNCN = thueSuat * thuNhap - 1.65;
+    } else if (thuNhap <= 52) {
+        thueSuat = 0.25;
+        thueTNCN = thueSuat * thuNhap - 3.25;
+    } else if (thuNhap <= 80) {
+        thueSuat = 0.3;
+        thueTNCN = thueSuat * thuNhap - 5.85;
+    } else {
+        thueSuat = 0.35;
+        thueTNCN = thueSuat * thuNhap - 9.85;
+    }
+    alert("Thuế tncn = " + thueTNCN);
+</script>
+</html>

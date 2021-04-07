@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = parseFloat(prompt("a = "));
+    let b = parseFloat(prompt("b = "));
+    let c = parseFloat(prompt("c = "));
+    let check = a > 0 && b > 0 && c > 0 && a + b > c && b + c > a && a + c > b;
+    if (check) {
+        alert("3 số vừa nhập là 3 cạnh của tam giác");
+    }else alert("3 số vừa nhập KHÔNG PHẢI là 3 cạnh của tam giác");
+</script>
+</html>

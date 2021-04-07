@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bc99a12c-8fad-43b6-a54c-58c59e748a65" name="Default Changelist" comment="Bài 10: Cấu trúc vòng lặp buổi 1 - Bài TH 4: Sử dụng vòng lặp lồng nhau">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_02_taodanhsach/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_02_taodanhsach/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_02_taodanhsach/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_04_gitvahtml/ThucHanh/_01_sudunghtmlcoban/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_04_gitvahtml/ThucHanh/_01_sudunghtmlcoban/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_04_gitvahtml/ThucHanh/_01_sudunghtmlcoban/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_09_cautrucdieukien-buoi2/BaiTap/_06_luyentapcautrucdieukien02/bai1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_09_cautrucdieukien-buoi2/BaiTap/_06_luyentapcautrucdieukien02/bai10.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_09_cautrucdieukien-buoi2/BaiTap/_06_luyentapcautrucdieukien02/bai11.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_09_cautrucdieukien-buoi2/BaiTap/_06_luyentapcautrucdieukien02/bai12.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_09_cautrucdieukien-buoi2/BaiTap/_06_luyentapcautrucdieukien02/bai2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_09_cautrucdieukien-buoi2/BaiTap/_06_luyentapcautrucdieukien02/bai3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_09_cautrucdieukien-buoi2/BaiTap/_06_luyentapcautrucdieukien02/bai4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_09_cautrucdieukien-buoi2/BaiTap/_06_luyentapcautrucdieukien02/bai5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_09_cautrucdieukien-buoi2/BaiTap/_06_luyentapcautrucdieukien02/bai6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_09_cautrucdieukien-buoi2/BaiTap/_06_luyentapcautrucdieukien02/bai7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_09_cautrucdieukien-buoi2/BaiTap/_06_luyentapcautrucdieukien02/bai8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_09_cautrucdieukien-buoi2/BaiTap/_06_luyentapcautrucdieukien02/bai9.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="ProjectId" id="1qYYSrYhP84fnhuFQZ23BwwGmQx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/_09_cautrucdieukien-buoi2/BaiTap/_06_luyentapcautrucdieukien02" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="liveEdit" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CodeGym\Module1\_09_cautrucdieukien-buoi2\BaiTap\_06_luyentapcautrucdieukien02" />
+      <recent name="D:\CodeGym\Module1\_09_cautrucdieukien-buoi2\BaiTap\_03_maytinhdongian" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CodeGym\Module1\_09_cautrucdieukien-buoi2\BaiTap" />
+      <recent name="D:\CodeGym\Module1\_08_cautrucdieukien\ThucHanh\_02_cautruc-if-else" />
+      <recent name="D:\CodeGym\Module1\_08_cautrucdieukien\ThucHanh\_01_kiemtranamnhuan" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.test.html">
+    <configuration name="FormLaySurvey.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Module1/_05_htmlformvatable/BaiTap/_02_formlaysurveykhachhang/FormLaySurvey.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="test.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Module1/test.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.test.html" />
+        <item itemvalue="JavaScript Debug.FormLaySurvey.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bc99a12c-8fad-43b6-a54c-58c59e748a65" name="Default Changelist" comment="" />
+      <created>1617257992928</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617257992928</updated>
+      <workItem from="1617258001299" duration="6627000" />
+      <workItem from="1617327067049" duration="17656000" />
+      <workItem from="1617422764774" duration="46000" />
+      <workItem from="1617423123880" duration="15268000" />
+      <workItem from="1617503311440" duration="8193000" />
+      <workItem from="1617585039478" duration="7826000" />
+      <workItem from="1617601734804" duration="27547000" />
+      <workItem from="1617727474827" duration="870000" />
+      <workItem from="1617728565411" duration="5270000" />
+      <workItem from="1617759565098" duration="8908000" />
+    </task>
+    <task id="LOCAL-00001" summary="Hoàn chỉnh bài tập 2: tạo form lấy survey người dùng của Bài 5: Form và Table">
+      <created>1617261987029</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617261987029</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Bài 6: Tổng quan Javascript - Bài thực hành 1: Hiển thị đầu ra">
+      <created>1617262488939</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617262488939</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Bài 6: Tổng quan Javascript - Bài thực hành 2: Nhúng javascript">
+      <created>1617262682629</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617262682629</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Bài 6: Tổng quan Javascript - Bài thực hành 2: Nhúng javascript">
+      <created>1617262708636</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1617262708636</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update lại code sau review">
+      <created>1617334462107</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1617334462107</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update lại bài 5 - bài tập 2: tạo form survey --- cố định lại textarea để tránh người dùng thay đổi kích thước">
+      <created>1617335464329</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1617335464329</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Bài 7: Biến, kiểu dữ liệu và toán tử - Bài thực hành 1: Khai báo và sử dụng biến">
+      <created>1617335773181</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1617335773181</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Bài 7: Biến, kiểu dữ liệu và toán tử - Bài thực hành 2:Sử dụng toán tử">
+      <created>1617336369702</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1617336369702</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Bài 7: Biến, kiểu dữ liệu và toán tử - Bài tập 1: Biến, kiểu dữ liệu và toán tử">
+      <created>1617337871778</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1617337871778</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Bài 7: Biến, kiểu dữ liệu và toán tử - Bài tập 2: Ứng dụng chuyển đổi tiền tệ">
+      <created>1617341546902</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1617341546902</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Bài 7: Biến, kiểu dữ liệu và toán tử - Bài tập 2: Ứng dụng máy tính">
+      <created>1617349147467</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1617349147467</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Bài 7: Biến, kiểu dữ liệu và toán tử - Bài tập 2: Ứng dụng máy tính - update tách chuỗi kết quả mỗi 3 chữ số">
+      <created>1617353254496</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1617353254496</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Bài 7: Biến, kiểu dữ liệu và toán tử - update folder name">
+      <created>1617508798809</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1617508798809</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Bài 8: Cấu trúc điều kiện - Bài TH 1: Kiểm tra năm nhuận">
+      <created>1617509009341</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1617509009341</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Bài 8: Cấu trúc điều kiện - Bài TH 2: Cấu trúc điều kiện if-else">
+      <created>1617509161773</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1617509161773</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Bài 8: Cấu trúc điều kiện - Bài TH 1 + 2">
+      <created>1617509257284</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1617509257284</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Bài 8: Cấu trúc điều kiện - Bài TH 1 + 2">
+      <created>1617509340200</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1617509340200</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Bài 8: Cấu trúc điều kiện - Bài TH 3: Cấu trúc if-else-if">
+      <created>1617509510545</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1617509510545</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Bài 8: Cấu trúc điều kiện - Bài TH 4: Cấu trúc switch-case">
+      <created>1617511240472</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1617511240472</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Bài 8: Cấu trúc điều kiện - Bài TH 5: Toán tử ba ngôi">
+      <created>1617511668128</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1617511668128</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Bài 9: Cấu trúc điều kiện Buổi 2 - Bài TH 1: Sự kiện chuột">
+      <created>1617595422363</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1617595422363</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Bài 8: Cấu trúc điều kiện Buổi 1 - Bài TH 3: Cấu trúc if-else-if">
+      <created>1617596730422</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1617596730422</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Bài 9: Cấu trúc điều kiện Buổi 2 - Bài TH 2: Sự kiện bàn phím">
+      <created>1617597169187</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1617597169187</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Bài 9: Cấu trúc điều kiện Buổi 2 - Bài tập 1: Tính chỉ số cân nặng của cơ thể">
+      <created>1617597495170</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1617597495170</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Bài 9: Cấu trúc điều kiện Buổi 2 - Bài tập 2: Câu lệnh switch - case">
+      <created>1617599629497</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1617599629497</updated>
+    </task>
+    <task id="LOCAL-00026" summary="gitignore">
+      <created>1617601702030</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1617601702030</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Bài 9: Cấu trúc điều kiện buổi 2 - Bài tập 3: Máy tính đơn giản">
+      <created>1617700955337</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1617700955337</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Bài 9: Cấu trúc điều kiện buổi 2 - Bài tập 3: Máy tính đơn giản">
+      <created>1617701084908</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1617701084908</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Bài 9: Cấu trúc điều kiện buổi 2 - Bài tập 4: Good-Cheap-Fast">
+      <created>1617706147090</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1617706147090</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Bài 9: Cấu trúc điều kiện buổi 2 - Bài tập 4: Good-Cheap-Fast">
+      <created>1617706326577</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1617706326577</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Bài 9: Cấu trúc điều kiện buổi 2 - Bài tập 5: Luyện tập cấu trúc điều kiện 01">
+      <created>1617734494138</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1617734494138</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Bài 10: Cấu trúc vòng lặp buổi 1 - Bài TH 1: Sử dụng vòng lặp for">
+      <created>1617765944223</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1617765944223</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Bài 10: Cấu trúc vòng lặp buổi 1 - Bài TH 2: Sử dụng vòng lặp while">
+      <created>1617766651669</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1617766651669</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Bài 10: Cấu trúc vòng lặp buổi 1 - Bài TH 3: Sử dụng vòng lặp do-while">
+      <created>1617766815331</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1617766815331</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Bài 10: Cấu trúc vòng lặp buổi 1 - Bài TH 4: Sử dụng vòng lặp lồng nhau">
+      <created>1617767092203</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1617767092203</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Bài 7: Biến, kiểu dữ liệu và toán tử - Bài thực hành 2:Sử dụng toán tử" />
+    <MESSAGE value="Bài 7: Biến, kiểu dữ liệu và toán tử - Bài tập 1: Biến, kiểu dữ liệu và toán tử" />
+    <MESSAGE value="Bài 7: Biến, kiểu dữ liệu và toán tử - Bài tập 2: Ứng dụng chuyển đổi tiền tệ" />
+    <MESSAGE value="Bài 7: Biến, kiểu dữ liệu và toán tử - Bài tập 2: Ứng dụng máy tính" />
+    <MESSAGE value="Bài 7: Biến, kiểu dữ liệu và toán tử - Bài tập 2: Ứng dụng máy tính - update tách chuỗi kết quả mỗi 3 chữ số" />
+    <MESSAGE value="Bài 7: Biến, kiểu dữ liệu và toán tử - update folder name" />
+    <MESSAGE value="Bài 8: Cấu trúc điều kiện - Bài TH 1: Kiểm tra năm nhuận" />
+    <MESSAGE value="Bài 8: Cấu trúc điều kiện - Bài TH 2: Cấu trúc điều kiện if-else" />
+    <MESSAGE value="Bài 8: Cấu trúc điều kiện - Bài TH 1 + 2" />
+    <MESSAGE value="Bài 8: Cấu trúc điều kiện - Bài TH 3: Cấu trúc if-else-if" />
+    <MESSAGE value="Bài 8: Cấu trúc điều kiện - Bài TH 4: Cấu trúc switch-case" />
+    <MESSAGE value="Bài 8: Cấu trúc điều kiện - Bài TH 5: Toán tử ba ngôi" />
+    <MESSAGE value="Bài 9: Cấu trúc điều kiện Buổi 2 - Bài TH 1: Sự kiện chuột" />
+    <MESSAGE value="Bài 8: Cấu trúc điều kiện Buổi 1 - Bài TH 3: Cấu trúc if-else-if" />
+    <MESSAGE value="Bài 9: Cấu trúc điều kiện Buổi 2 - Bài TH 2: Sự kiện bàn phím" />
+    <MESSAGE value="Bài 9: Cấu trúc điều kiện Buổi 2 - Bài tập 1: Tính chỉ số cân nặng của cơ thể" />
+    <MESSAGE value="Bài 9: Cấu trúc điều kiện Buổi 2 - Bài tập 2: Câu lệnh switch - case" />
+    <MESSAGE value="gitignore" />
+    <MESSAGE value="Bài 9: Cấu trúc điều kiện buổi 2 - Bài tập 3: Máy tính đơn giản" />
+    <MESSAGE value="Bài 9: Cấu trúc điều kiện buổi 2 - Bài tập 4: Good-Cheap-Fast" />
+    <MESSAGE value="Bài 9: Cấu trúc điều kiện buổi 2 - Bài tập 5: Luyện tập cấu trúc điều kiện 01" />
+    <MESSAGE value="Bài 10: Cấu trúc vòng lặp buổi 1 - Bài TH 1: Sử dụng vòng lặp for" />
+    <MESSAGE value="Bài 10: Cấu trúc vòng lặp buổi 1 - Bài TH 2: Sử dụng vòng lặp while" />
+    <MESSAGE value="Bài 10: Cấu trúc vòng lặp buổi 1 - Bài TH 3: Sử dụng vòng lặp do-while" />
+    <MESSAGE value="Bài 10: Cấu trúc vòng lặp buổi 1 - Bài TH 4: Sử dụng vòng lặp lồng nhau" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bài 10: Cấu trúc vòng lặp buổi 1 - Bài TH 4: Sử dụng vòng lặp lồng nhau" />
+  </component>
+</project>

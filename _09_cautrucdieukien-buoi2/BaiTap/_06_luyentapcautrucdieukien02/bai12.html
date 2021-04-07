@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 12</title>
+</head>
+<body>
+
+</body>
+<script>
+    let tienVayBanDau = parseInt(prompt("Số tiền vay: "));
+    let thang = parseInt(prompt("Số tháng vay: "));
+    let laiSuat;
+    if (thang > 12) {
+        laiSuat = 5.5 / 100;
+    } else if (thang > 6) {
+        laiSuat = 3.8 / 100;
+    } else laiSuat = 2.9 / 100;
+    alert(tinhTienLai(tienVayBanDau, thang))
+
+    function tinhTienLai() {
+        let tienLai = 0;
+        for (let i = 1; i <= thang; i++) {
+            tienLai += tienVayBanDau * laiSuat;
+            tienVayBanDau += tienLai;
+        }
+        return tienLai.toFixed(0);
+    }
+</script>
+</html>

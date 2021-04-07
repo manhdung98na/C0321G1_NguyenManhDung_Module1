@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = prompt("Phương trình bậc 2: \na = ");
+    let b = prompt("Phương trình bậc 2: \nb = ");
+    let c = prompt("Phương trình bậc 2: \nc = ");
+    if (a == 0){
+        if (b == 0){
+            if (c == 0) alert("Phương trình có vô số nghiệm");
+            else alert("Phương trình vô nghiệm");
+        }else {
+            alert("Phương trình có nghiệm x = " + (-c/b));
+        }
+    }else {
+        let delta = b*b - 4*a*c;
+        if (delta > 0){
+            let x1 = (-b + Math.sqrt(delta)) / (2*a);
+            let x2 = (-b - Math.sqrt(delta)) / (2*a);
+            alert("Phương trình có 2 nghiệm:" +
+                " \nx1 = " + x1 +
+                " \nx2 = " + x2);
+        }else if (delta == 0){
+            alert("Phương trình có nghiệm kép\n x1 = x2 = " + (-b/(2*a)));
+        }else alert("Phương trình vô nghiệm")
+    }
+</script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 10</title>
+</head>
+<body>
+
+</body>
+<script>
+    const BACTHANG1 = 1678;
+    const BACTHANG2 = 1734;
+    const BACTHANG3 = 2014;
+    const BACTHANG4 = 2536;
+    const BACTHANG5 = 2834;
+    const BACTHANG6 = 2927;
+    let sanLuongDien = parseFloat(prompt("Sản lượng điện đã sử dụng (kWh) = "));
+    let giaTien;
+    if (sanLuongDien <= 50) {
+        giaTien = sanLuongDien * BACTHANG1;
+        alert("Giá tiền: " + giaTien + " đồng/kWh");
+    } else if (sanLuongDien <= 100) {
+        giaTien = 50 * BACTHANG1 + (sanLuongDien - 50) * BACTHANG2;
+        alert("Giá tiền: " + giaTien + " đồng/kWh");
+    } else if (sanLuongDien <= 200) {
+        giaTien = 50 * BACTHANG1 + 50 * BACTHANG2 + (sanLuongDien - 100) * BACTHANG3;
+        alert("Giá tiền: " + giaTien + " đồng/kWh");
+    }else if (sanLuongDien <= 300){
+        giaTien = 50 * BACTHANG1 + 50 * BACTHANG2 + 100 * BACTHANG3 + (sanLuongDien - 200) * BACTHANG4;
+        alert("Giá tiền: " + giaTien + " đồng/kWh");
+    }else if (sanLuongDien <= 400){
+        giaTien = 50 * BACTHANG1 + 50 * BACTHANG2 + 100 * BACTHANG3 + 100 * BACTHANG4 + (sanLuongDien - 300) * BACTHANG5;
+        alert("Giá tiền: " + giaTien + " đồng/kWh");
+    }else {
+        giaTien = 50 * BACTHANG1 + 50 * BACTHANG2 + 100 * BACTHANG3 + 100 * BACTHANG4 + 100 * BACTHANG5 + (sanLuongDien - 400) * BACTHANG6;
+        alert("Giá tiền: " + giaTien + " đồng/kWh");
+    }
+</script>
+</html>
