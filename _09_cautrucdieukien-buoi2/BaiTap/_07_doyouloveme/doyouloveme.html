@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Ứng dụng vui</title>
+    <style>
+        body{
+            display: block;
+            text-align: -webkit-center;
+            padding-top: 50px;
+        }
+        #yes{
+            left: 45%;
+            top: 120px;
+        }
+        #no{
+            right: 45%;
+            top: 120px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h2>Do you love me ???</h2>
+    <br>
+    <span>
+        <input type="button" value="Yes" id="yes" onclick="alert('<3')" style="position:absolute">
+        <input type="button" value="No" id="no" onmouseover="randomViTri()" style="position:absolute">
+    </span>
+</div>
+</body>
+<script type="text/javascript">
+    function randomViTri(){
+        let x = Math.round(Math.random() * window.innerWidth);
+        let y = Math.round(Math.random() * window.innerHeight);
+        document.getElementById('no').style.left = x + 'px';
+        document.getElementById('no').style.top = y + 'px';
+    }
+</script>
+</html>

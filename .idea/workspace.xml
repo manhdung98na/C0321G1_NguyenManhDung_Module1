@@ -19,27 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc99a12c-8fad-43b6-a54c-58c59e748a65" name="Default Changelist" comment="Bài 10: Cấu trúc vòng lặp buổi 1 - Bài TH 4: Sử dụng vòng lặp lồng nhau">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_02_taodanhsach/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_02_taodanhsach/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_02_taodanhsach/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_04_gitvahtml/ThucHanh/_01_sudunghtmlcoban/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_04_gitvahtml/ThucHanh/_01_sudunghtmlcoban/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_04_gitvahtml/ThucHanh/_01_sudunghtmlcoban/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_09_cautrucdieukien-buoi2/BaiTap/_06_luyentapcautrucdieukien02/bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_09_cautrucdieukien-buoi2/BaiTap/_06_luyentapcautrucdieukien02/bai10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_09_cautrucdieukien-buoi2/BaiTap/_06_luyentapcautrucdieukien02/bai11.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_09_cautrucdieukien-buoi2/BaiTap/_06_luyentapcautrucdieukien02/bai12.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_09_cautrucdieukien-buoi2/BaiTap/_06_luyentapcautrucdieukien02/bai2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_09_cautrucdieukien-buoi2/BaiTap/_06_luyentapcautrucdieukien02/bai3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_09_cautrucdieukien-buoi2/BaiTap/_06_luyentapcautrucdieukien02/bai4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_09_cautrucdieukien-buoi2/BaiTap/_06_luyentapcautrucdieukien02/bai5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_09_cautrucdieukien-buoi2/BaiTap/_06_luyentapcautrucdieukien02/bai6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_09_cautrucdieukien-buoi2/BaiTap/_06_luyentapcautrucdieukien02/bai7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_09_cautrucdieukien-buoi2/BaiTap/_06_luyentapcautrucdieukien02/bai8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_09_cautrucdieukien-buoi2/BaiTap/_06_luyentapcautrucdieukien02/bai9.html" afterDir="false" />
+    <list default="true" id="bc99a12c-8fad-43b6-a54c-58c59e748a65" name="Default Changelist" comment="Bài 9: Cấu trúc điều kiện buổi 2 - Bài tập 6: Luyện tập cấu trúc điều kiện 2">
+      <change afterPath="$PROJECT_DIR$/_09_cautrucdieukien-buoi2/BaiTap/_07_doyouloveme/doyouloveme.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +111,7 @@
       <workItem from="1617601734804" duration="27547000" />
       <workItem from="1617727474827" duration="870000" />
       <workItem from="1617728565411" duration="5270000" />
-      <workItem from="1617759565098" duration="8908000" />
+      <workItem from="1617759565098" duration="11159000" />
     </task>
     <task id="LOCAL-00001" summary="Hoàn chỉnh bài tập 2: tạo form lấy survey người dùng của Bài 5: Form và Table">
       <created>1617261987029</created>
@@ -374,7 +358,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617767092203</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Bài 9: Cấu trúc điều kiện buổi 2 - Bài tập 6: Luyện tập cấu trúc điều kiện 2">
+      <created>1617778701490</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1617778701490</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,7 +385,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Bài 7: Biến, kiểu dữ liệu và toán tử - Bài thực hành 2:Sử dụng toán tử" />
     <MESSAGE value="Bài 7: Biến, kiểu dữ liệu và toán tử - Bài tập 1: Biến, kiểu dữ liệu và toán tử" />
     <MESSAGE value="Bài 7: Biến, kiểu dữ liệu và toán tử - Bài tập 2: Ứng dụng chuyển đổi tiền tệ" />
     <MESSAGE value="Bài 7: Biến, kiểu dữ liệu và toán tử - Bài tập 2: Ứng dụng máy tính" />
@@ -419,6 +409,7 @@
     <MESSAGE value="Bài 10: Cấu trúc vòng lặp buổi 1 - Bài TH 2: Sử dụng vòng lặp while" />
     <MESSAGE value="Bài 10: Cấu trúc vòng lặp buổi 1 - Bài TH 3: Sử dụng vòng lặp do-while" />
     <MESSAGE value="Bài 10: Cấu trúc vòng lặp buổi 1 - Bài TH 4: Sử dụng vòng lặp lồng nhau" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bài 10: Cấu trúc vòng lặp buổi 1 - Bài TH 4: Sử dụng vòng lặp lồng nhau" />
+    <MESSAGE value="Bài 9: Cấu trúc điều kiện buổi 2 - Bài tập 6: Luyện tập cấu trúc điều kiện 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bài 9: Cấu trúc điều kiện buổi 2 - Bài tập 6: Luyện tập cấu trúc điều kiện 2" />
   </component>
 </project>
