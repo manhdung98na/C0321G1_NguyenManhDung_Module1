@@ -19,11 +19,80 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc99a12c-8fad-43b6-a54c-58c59e748a65" name="Default Changelist" comment="Bài 9: Cấu trúc điều kiện buổi 2 - Bài tập 6: Luyện tập cấu trúc điều kiện 2">
-      <change afterPath="$PROJECT_DIR$/_09_cautrucdieukien-buoi2/BaiTap/_07_doyouloveme/doyouloveme.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="bc99a12c-8fad-43b6-a54c-58c59e748a65" name="Default Changelist" comment="gitignore">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_4_2021_2_50_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_4_2021_2_50_PM__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_01_baitapsudunggit/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_01_baitapsudunggit/.idea/_01_BaitapsudungGit.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_01_baitapsudunggit/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_01_baitapsudunggit/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_01_baitapsudunggit/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_02_taodanhsach/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_02_taodanhsach/.idea/_02_taodanhsach.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_02_taodanhsach/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_02_taodanhsach/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_02_taodanhsach/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_03_taotrangcvcanhan/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_03_taotrangcvcanhan/.idea/_03_taotrangcvcanhan.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_03_taotrangcvcanhan/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_03_taotrangcvcanhan/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_03_taotrangcvcanhan/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/ThucHanh/_01_sudunghtmlcoban/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/ThucHanh/_01_sudunghtmlcoban/.idea/_01_sudunghtmlcoban.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/ThucHanh/_01_sudunghtmlcoban/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/ThucHanh/_01_sudunghtmlcoban/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/ThucHanh/_01_sudunghtmlcoban/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/.idea/_05_htmlformvatable.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_01_taoformdongian/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_01_taoformdongian/.idea/_01_taoformdongian.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_01_taoformdongian/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_01_taoformdongian/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_01_taoformdongian/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_02_formlaysurveykhachhang/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_02_formlaysurveykhachhang/.idea/_02_formlaysurveykhachhang.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_02_formlaysurveykhachhang/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_02_formlaysurveykhachhang/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_02_formlaysurveykhachhang/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_03_taoformdangky/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_03_taoformdangky/.idea/_03_taoformdangky.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_03_taoformdangky/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_03_taoformdangky/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_03_taoformdangky/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_04_taobangdongian/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_04_taobangdongian/.idea/_04_taobangdongian.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_04_taobangdongian/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_04_taobangdongian/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_04_taobangdongian/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_05_taobangnangcao/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_05_taobangnangcao/.idea/_05_taobangnangcao.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_05_taobangnangcao/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_05_taobangnangcao/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_05_taobangnangcao/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_01_taoformcoban/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_01_taoformcoban/.idea/_01_taoformcoban.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_01_taoformcoban/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_01_taoformcoban/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_01_taoformcoban/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_02_taoformtimkiem/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_02_taoformtimkiem/.idea/_02_taoformtimkiem.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_02_taoformtimkiem/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_02_taoformtimkiem/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_02_taoformtimkiem/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_03_taobangcoban/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_03_taobangcoban/.idea/_03_taobangcoban.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_03_taobangcoban/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_03_taobangcoban/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_03_taobangcoban/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_04_taobangnangcao/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_04_taobangnangcao/.idea/_04_taobangnangcao.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_04_taobangnangcao/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_04_taobangnangcao/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_04_taobangnangcao/.idea/vcs.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +132,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/_09_cautrucdieukien-buoi2/BaiTap/_06_luyentapcautrucdieukien02" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="liveEdit" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -112,6 +181,7 @@
       <workItem from="1617727474827" duration="870000" />
       <workItem from="1617728565411" duration="5270000" />
       <workItem from="1617759565098" duration="11159000" />
+      <workItem from="1617782326425" duration="34000" />
     </task>
     <task id="LOCAL-00001" summary="Hoàn chỉnh bài tập 2: tạo form lấy survey người dùng của Bài 5: Form và Table">
       <created>1617261987029</created>
@@ -365,7 +435,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617778701490</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="a">
+      <created>1617782013129</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1617782013129</updated>
+    </task>
+    <task id="LOCAL-00038" summary="gitignore">
+      <created>1617782096965</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1617782096965</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,7 +469,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Bài 7: Biến, kiểu dữ liệu và toán tử - Bài tập 1: Biến, kiểu dữ liệu và toán tử" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_01_baitapsudunggit/GitProject" />
+    </ignored-roots>
     <MESSAGE value="Bài 7: Biến, kiểu dữ liệu và toán tử - Bài tập 2: Ứng dụng chuyển đổi tiền tệ" />
     <MESSAGE value="Bài 7: Biến, kiểu dữ liệu và toán tử - Bài tập 2: Ứng dụng máy tính" />
     <MESSAGE value="Bài 7: Biến, kiểu dữ liệu và toán tử - Bài tập 2: Ứng dụng máy tính - update tách chuỗi kết quả mỗi 3 chữ số" />
@@ -401,7 +487,6 @@
     <MESSAGE value="Bài 9: Cấu trúc điều kiện Buổi 2 - Bài TH 2: Sự kiện bàn phím" />
     <MESSAGE value="Bài 9: Cấu trúc điều kiện Buổi 2 - Bài tập 1: Tính chỉ số cân nặng của cơ thể" />
     <MESSAGE value="Bài 9: Cấu trúc điều kiện Buổi 2 - Bài tập 2: Câu lệnh switch - case" />
-    <MESSAGE value="gitignore" />
     <MESSAGE value="Bài 9: Cấu trúc điều kiện buổi 2 - Bài tập 3: Máy tính đơn giản" />
     <MESSAGE value="Bài 9: Cấu trúc điều kiện buổi 2 - Bài tập 4: Good-Cheap-Fast" />
     <MESSAGE value="Bài 9: Cấu trúc điều kiện buổi 2 - Bài tập 5: Luyện tập cấu trúc điều kiện 01" />
@@ -410,6 +495,8 @@
     <MESSAGE value="Bài 10: Cấu trúc vòng lặp buổi 1 - Bài TH 3: Sử dụng vòng lặp do-while" />
     <MESSAGE value="Bài 10: Cấu trúc vòng lặp buổi 1 - Bài TH 4: Sử dụng vòng lặp lồng nhau" />
     <MESSAGE value="Bài 9: Cấu trúc điều kiện buổi 2 - Bài tập 6: Luyện tập cấu trúc điều kiện 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bài 9: Cấu trúc điều kiện buổi 2 - Bài tập 6: Luyện tập cấu trúc điều kiện 2" />
+    <MESSAGE value="a" />
+    <MESSAGE value="gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitignore" />
   </component>
 </project>
