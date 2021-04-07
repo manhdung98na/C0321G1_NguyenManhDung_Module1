@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<h2>Tổng 20 số đầu tiên trong dãy fibonacci</h2>
+<div>
+    <p id="result"></p>
+</div>
+</body>
+<script>
+    let number = 1, sum = 0;
+    while (number <= 20) {
+        sum += parseInt(checkFibonacci(number));
+        number++;
+    }
+    alert("Tổng 20 số đầu tiên trong dãy Fibo = " + sum);
+
+    //n là số fibonaci thứ N
+    function checkFibonacci(n) {
+        if (n == 1 || n == 0) return n;
+        else return checkFibonacci(n - 1) + checkFibonacci(n - 2);
+    }
+
+</script>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+<center>
+    <h3>Tổng 30 số chia hết cho 7 đầu tiên trong dãy số tự nhiên</h3>
+    <p id="result"></p>
+</center>
+</body>
+<script>
+    let count = 1;
+    let sum = 0;
+    for (let i = 7; count <= 30; i = i+7){
+        sum += i;
+        count++;
+    }
+    document.getElementById('result').innerText = sum;
+</script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+    <style>
+        body{
+            display: block;
+            text-align: -webkit-center;
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <input type="button" value="CHƠI" id="btChoi" onclick="play()">
+</div>
+</body>
+<script>
+    function play() {
+        let endNum = parseInt(prompt("Bạn muốn đoán trong khoảng nào (từ 0 đến số được chọn): "));
+        let startNum = 0;
+        let result = getRandomNum(startNum, endNum);
+        let doanSo, count = 0;
+        do {
+            doanSo = parseInt(prompt("Số dự đoán: "));
+            count++;
+            if (doanSo == result) {
+                alert("Chúc mừng bạn dã đoán đúng");
+                return;
+            } else {
+                if (doanSo > result) {
+                    alert("Số bạn đoán lớn hơn kết quả");
+                }else alert("Số bạn đoán bé hơn kết quả");
+            }
+        } while (count <= 3);
+        alert("Kết quả là " + result);
+    }
+
+    function getRandomNum(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min;
+    }
+</script>
+</html>
