@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng cửu chương</title>
+    <style>
+        body{
+            display: block;
+            text-align: -webkit-center;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1>BẢNG CỬU CHƯƠNG</h1>
+    <table id="myTable" cellspacing="0px" cellpadding="8" style="width: 100%; text-align: center"></table>
+</div>
+</body>
+<script>
+    let table = document.getElementById("myTable");
+    let resultStr = "";
+    for (let i = 1; i <= 9; i++) {
+        let row = table.insertRow(i-1);
+        for (let j = 2; j <= 9; j++) {
+            resultStr = j + "x" + i + " = " + (j*i);
+            let cell = row.insertCell(j-2);
+            cell.innerHTML = resultStr;
+        }
+    }
+
+</script>
+</html>
