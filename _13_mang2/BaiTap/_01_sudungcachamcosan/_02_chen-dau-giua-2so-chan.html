@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chèn dấu - giữa 2 số chẵn</title>
+</head>
+<body>
+
+</body>
+<script>
+    let input = prompt("Nhập 1 dãy số ");
+    input = input.toString();
+    let result = input[0];
+    for (let i = 1; i<input.length; i++) {
+        if (input[i] % 2 == 0 && input[i - 1] % 2 == 0) {
+            result += "-";
+        }
+        result += input[i];
+    }
+    document.write(result);
+</script>
+</html>

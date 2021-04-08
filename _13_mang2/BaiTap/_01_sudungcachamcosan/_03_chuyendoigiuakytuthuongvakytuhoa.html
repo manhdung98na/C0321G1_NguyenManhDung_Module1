@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi kí tự thường và ký tự hoa</title>
+</head>
+<body>
+
+</body>
+<script>
+    let inputStr = prompt("Nhập chuỗi: ");
+    let result = "";
+    for (let i = 0; i < inputStr.length; i++){
+        let kiTu = inputStr.charCodeAt(i);
+        if (kiTu >= 65 && kiTu <= 90){
+            result += String.fromCharCode(kiTu+32);
+        }else if (kiTu >= 97 && kiTu <= 122){
+                result += String.fromCharCode(kiTu-32);
+        }else {
+            result += inputStr[i];
+        }
+    }
+    document.write("Chuỗi kết quả: " + result);
+</script>
+</html>
