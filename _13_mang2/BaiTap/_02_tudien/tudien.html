@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+<div>
+    <input type="text" id="input" placeholder="Nhập từ cần tìm">
+    <input type="button" id="button" value="TÌM KIẾM" onclick="search()">
+    <p id="result"></p>
+</div>
+</body>
+<script>
+    let arrTiengAnh = ["house", "car", "mountain", "computer"];
+    let arrTiengViet = ["ngôi nhà", "xe ô tô", "ngọn núi", "máy tính"];
+    function search(){
+        let inputStr = document.getElementById('input').value;
+        for (let index = 0; index < arrTiengAnh.length; index++){
+            if (arrTiengAnh[index] == inputStr){
+                document.getElementById('result').innerText = arrTiengViet[index];
+                document.getElementById('input').value = "";
+                return;
+            }
+        }
+        alert("Không tìm thấy");
+        document.getElementById('input').value = "";
+    }
+
+
+</script>
+</html>
