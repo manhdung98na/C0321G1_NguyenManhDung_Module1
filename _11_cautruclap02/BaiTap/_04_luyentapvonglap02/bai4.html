@@ -5,7 +5,7 @@
     <title>In ra hình chữ nhật</title>
 </head>
 <body>
-    <p id="result" style="padding-top: 100px; padding-left: 150px"></p>
+<p id="result" style="padding-top: 100px; padding-left: 150px"></p>
 </body>
 <script>
     let dai, rong;
@@ -15,17 +15,18 @@
     } while (rong > dai || dai <= 0 || rong <= 0)
     let result = "";
     for (let i = 1; i <= rong; i++) {
+        //in ra 2 cạnh chiều dài
         if (i == 1 || i == rong) {
             for (let j = 1; j <= dai; j++){
-                result += "*&nbsp";
+                result += "*&nbsp&nbsp&nbsp";
             }
             result += "<br>"
-        }else {
+        }else { //in ra phần khoảng trắng giữa hình chữ nhật
             result += "* ";
             for (let j = 2; j < dai; j++){
-                result += "&nbsp&nbsp&nbsp"
+                result += "&nbsp&nbsp&nbsp&nbsp&nbsp"
             }
-            result += "* ";
+            result += "&nbsp&nbsp*";
             result += "<br>";
         }
     }
