@@ -19,80 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc99a12c-8fad-43b6-a54c-58c59e748a65" name="Default Changelist" comment="gitignore">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_4_2021_2_50_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_4_2021_2_50_PM__Default_Changelist_.xml" beforeDir="false" />
+    <list default="true" id="bc99a12c-8fad-43b6-a54c-58c59e748a65" name="Default Changelist" comment="Buổi 11: Cấu trúc vòng lặp 2 - Bài tập 04: Luyện tập sử dụng vòng lặp 2 - Vẽ hình trái tim">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_01_baitapsudunggit/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_01_baitapsudunggit/.idea/_01_BaitapsudungGit.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_01_baitapsudunggit/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_01_baitapsudunggit/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_01_baitapsudunggit/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_02_taodanhsach/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_02_taodanhsach/.idea/_02_taodanhsach.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_02_taodanhsach/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_02_taodanhsach/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_02_taodanhsach/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_03_taotrangcvcanhan/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_03_taotrangcvcanhan/.idea/_03_taotrangcvcanhan.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_03_taotrangcvcanhan/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_03_taotrangcvcanhan/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_03_taotrangcvcanhan/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/ThucHanh/_01_sudunghtmlcoban/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/ThucHanh/_01_sudunghtmlcoban/.idea/_01_sudunghtmlcoban.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/ThucHanh/_01_sudunghtmlcoban/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/ThucHanh/_01_sudunghtmlcoban/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_04_gitvahtml/ThucHanh/_01_sudunghtmlcoban/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/.idea/_05_htmlformvatable.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_01_taoformdongian/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_01_taoformdongian/.idea/_01_taoformdongian.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_01_taoformdongian/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_01_taoformdongian/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_01_taoformdongian/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_02_formlaysurveykhachhang/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_02_formlaysurveykhachhang/.idea/_02_formlaysurveykhachhang.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_02_formlaysurveykhachhang/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_02_formlaysurveykhachhang/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_02_formlaysurveykhachhang/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_03_taoformdangky/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_03_taoformdangky/.idea/_03_taoformdangky.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_03_taoformdangky/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_03_taoformdangky/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_03_taoformdangky/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_04_taobangdongian/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_04_taobangdongian/.idea/_04_taobangdongian.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_04_taobangdongian/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_04_taobangdongian/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_04_taobangdongian/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_05_taobangnangcao/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_05_taobangnangcao/.idea/_05_taobangnangcao.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_05_taobangnangcao/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_05_taobangnangcao/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/BaiTap/_05_taobangnangcao/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_01_taoformcoban/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_01_taoformcoban/.idea/_01_taoformcoban.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_01_taoformcoban/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_01_taoformcoban/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_01_taoformcoban/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_02_taoformtimkiem/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_02_taoformtimkiem/.idea/_02_taoformtimkiem.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_02_taoformtimkiem/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_02_taoformtimkiem/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_02_taoformtimkiem/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_03_taobangcoban/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_03_taobangcoban/.idea/_03_taobangcoban.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_03_taobangcoban/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_03_taobangcoban/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_03_taobangcoban/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_04_taobangnangcao/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_04_taobangnangcao/.idea/_04_taobangnangcao.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_04_taobangnangcao/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_04_taobangnangcao/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_05_htmlformvatable/ThucHanh/_04_taobangnangcao/.idea/vcs.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,13 +59,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/_09_cautrucdieukien-buoi2/BaiTap/_06_luyentapcautrucdieukien02" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/_11_cautruclap02/BaiTap/_03_luyentapvonglap01" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="Shelf.Project.Settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CodeGym\Module1\_11_cautruclap02\BaiTap\_03_luyentapvonglap01" />
       <recent name="D:\CodeGym\Module1\_09_cautrucdieukien-buoi2\BaiTap\_06_luyentapcautrucdieukien02" />
       <recent name="D:\CodeGym\Module1\_09_cautrucdieukien-buoi2\BaiTap\_03_maytinhdongian" />
     </key>
@@ -181,7 +112,9 @@
       <workItem from="1617727474827" duration="870000" />
       <workItem from="1617728565411" duration="5270000" />
       <workItem from="1617759565098" duration="11159000" />
-      <workItem from="1617782326425" duration="34000" />
+      <workItem from="1617782326425" duration="8306000" />
+      <workItem from="1617804860787" duration="10842000" />
+      <workItem from="1617844393145" duration="11470000" />
     </task>
     <task id="LOCAL-00001" summary="Hoàn chỉnh bài tập 2: tạo form lấy survey người dùng của Bài 5: Form và Table">
       <created>1617261987029</created>
@@ -449,7 +382,63 @@
       <option name="project" value="LOCAL" />
       <updated>1617782096965</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="gitignore">
+      <created>1617782446329</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1617782446329</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Buổi 11: Cấu trúc vòng lặp 2 - Bài tập 01: Bảng cửu chương">
+      <created>1617785672074</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1617785672074</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Buổi 11: Cấu trúc vòng lặp 2 - Bài tập 02: Hiển thị số nguyên tố">
+      <created>1617786559457</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1617786559457</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Buổi 11: Cấu trúc vòng lặp 2 - Bài tập 02: Luyện tập vòng lặp 01">
+      <created>1617812555125</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1617812555126</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Buổi 10: Cấu trúc vòng lặp 1 - Bài TH 04: Vòng lặp lồng nhau">
+      <created>1617846804526</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1617846804526</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Buổi 11: Cấu trúc vòng lặp 2 - Bài tập 04: Luyện tập sử dụng vòng lặp 2">
+      <created>1617846852197</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1617846852197</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Buổi 11: Cấu trúc vòng lặp 2 - Bài tập 04: Luyện tập sử dụng vòng lặp 2 - Update code của bài vẽ hình chữ nhật để nó hiển thị chính xác hơn">
+      <created>1617847947005</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1617847947005</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Buổi 11: Cấu trúc vòng lặp 2 - Bài tập 04: Luyện tập sử dụng vòng lặp 2 - Vẽ hình trái tim">
+      <created>1617855826096</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1617855826096</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,13 +461,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/_04_gitvahtml/BaiTap/_01_baitapsudunggit/GitProject" />
     </ignored-roots>
-    <MESSAGE value="Bài 7: Biến, kiểu dữ liệu và toán tử - Bài tập 2: Ứng dụng chuyển đổi tiền tệ" />
-    <MESSAGE value="Bài 7: Biến, kiểu dữ liệu và toán tử - Bài tập 2: Ứng dụng máy tính" />
-    <MESSAGE value="Bài 7: Biến, kiểu dữ liệu và toán tử - Bài tập 2: Ứng dụng máy tính - update tách chuỗi kết quả mỗi 3 chữ số" />
-    <MESSAGE value="Bài 7: Biến, kiểu dữ liệu và toán tử - update folder name" />
-    <MESSAGE value="Bài 8: Cấu trúc điều kiện - Bài TH 1: Kiểm tra năm nhuận" />
-    <MESSAGE value="Bài 8: Cấu trúc điều kiện - Bài TH 2: Cấu trúc điều kiện if-else" />
-    <MESSAGE value="Bài 8: Cấu trúc điều kiện - Bài TH 1 + 2" />
     <MESSAGE value="Bài 8: Cấu trúc điều kiện - Bài TH 3: Cấu trúc if-else-if" />
     <MESSAGE value="Bài 8: Cấu trúc điều kiện - Bài TH 4: Cấu trúc switch-case" />
     <MESSAGE value="Bài 8: Cấu trúc điều kiện - Bài TH 5: Toán tử ba ngôi" />
@@ -497,6 +479,13 @@
     <MESSAGE value="Bài 9: Cấu trúc điều kiện buổi 2 - Bài tập 6: Luyện tập cấu trúc điều kiện 2" />
     <MESSAGE value="a" />
     <MESSAGE value="gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="gitignore" />
+    <MESSAGE value="Buổi 11: Cấu trúc vòng lặp 2 - Bài tập 01: Bảng cửu chương" />
+    <MESSAGE value="Buổi 11: Cấu trúc vòng lặp 2 - Bài tập 02: Hiển thị số nguyên tố" />
+    <MESSAGE value="Buổi 11: Cấu trúc vòng lặp 2 - Bài tập 02: Luyện tập vòng lặp 01" />
+    <MESSAGE value="Buổi 10: Cấu trúc vòng lặp 1 - Bài TH 04: Vòng lặp lồng nhau" />
+    <MESSAGE value="Buổi 11: Cấu trúc vòng lặp 2 - Bài tập 04: Luyện tập sử dụng vòng lặp 2" />
+    <MESSAGE value="Buổi 11: Cấu trúc vòng lặp 2 - Bài tập 04: Luyện tập sử dụng vòng lặp 2 - Update code của bài vẽ hình chữ nhật để nó hiển thị chính xác hơn" />
+    <MESSAGE value="Buổi 11: Cấu trúc vòng lặp 2 - Bài tập 04: Luyện tập sử dụng vòng lặp 2 - Vẽ hình trái tim" />
+    <option name="LAST_COMMIT_MESSAGE" value="Buổi 11: Cấu trúc vòng lặp 2 - Bài tập 04: Luyện tập sử dụng vòng lặp 2 - Vẽ hình trái tim" />
   </component>
 </project>
