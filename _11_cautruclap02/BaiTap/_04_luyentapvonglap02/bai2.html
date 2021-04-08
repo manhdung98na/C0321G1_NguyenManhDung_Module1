@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giai thừa của 1 số nguyên dương</title>
+</head>
+<body>
+
+</body>
+<script>
+    let number;
+    do {
+        number = parseInt(prompt("Nhập số nguyên dương: "));
+    }while (number <= 0);
+    let giaiThua = 1;
+    for (let i = 2; i<= number; i++){
+        giaiThua *= i;
+    }
+    alert(number + "! = " + giaiThua);
+</script>
+</html>

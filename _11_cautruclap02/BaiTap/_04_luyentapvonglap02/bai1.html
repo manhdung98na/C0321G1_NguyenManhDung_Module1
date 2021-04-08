@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In dãy Fibonacci</title>
+</head>
+<body>
+
+</body>
+<script>
+    let number = parseInt(prompt("Số lượng muốn in ra: "));
+    let count = 1;
+    let result = "";
+    while (count <= number) {
+        result += checkFibonacci(count) + " ";
+        count++;
+    }
+    document.write(result);
+
+    //n là số fibonaci thứ N
+    function checkFibonacci(n) {
+        if (n == 1 || n == 0) return n;
+        else return checkFibonacci(n - 1) + checkFibonacci(n - 2);
+    }
+</script>
+</html>

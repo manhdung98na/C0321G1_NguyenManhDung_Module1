@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In ra tam giác vuông</title>
+    <style>
+        body{
+            display: block;
+        }
+        p{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+<p id="1"></p><br>
+<p id="2"></p><br>
+<p id="3"></p><br>
+<p id="4"></p><br>
+</body>
+<script>
+    let canhTamGiac;
+    //nhập độ dài cạnh tam giác
+    do {
+        canhTamGiac = parseInt(prompt("Độ dài cạnh tam giác muốn in: "));
+    } while (canhTamGiac <= 1);
+    let tamGiac1 = "", tamGiac2 = "", tamGiac3 = "", tamGiac4 = "";
+
+    //in ra tam giác có góc vuông ở góc bottom-left
+    for (let i = 1; i <= canhTamGiac; i++) {
+        for (let j = 1; j <= i; j++) {
+            tamGiac1 += "* "
+        }
+        tamGiac1 += "<br>";
+    }
+    document.getElementById('1').innerHTML = tamGiac1;
+
+    //in ra tam giác có góc vuông ở góc top-left
+    for (let i = canhTamGiac; i >= 1; i--) {
+        for (let j = 1; j <= i; j++) {
+            tamGiac2 += "* ";
+        }
+        tamGiac2 += "<br>";
+    }
+    document.getElementById('2').innerHTML = tamGiac2;
+
+    //in ra tam giác có góc vuông ở góc bottom-right
+    let t = 1;
+    for (let i = canhTamGiac; i >= 1; i--) {
+        //in ký tự trắng
+        for (let j = 0; j < i-1; j++){
+            tamGiac3 += "&nbsp&nbsp&nbsp";
+        }
+        //in kí tự *
+        for (let j = 1; j <= t; j++) {
+            tamGiac3 += "* ";
+        }
+        t++;
+        tamGiac3 += "<br>";
+    }
+    document.getElementById('3').innerHTML = tamGiac3;
+
+    //in ra tam giác có góc vuông ở góc top-right
+    let x = canhTamGiac;
+    for (let i = 0; i < canhTamGiac; i++) {
+        //in ký tự trắng
+        for (let j = 0; j < i; j++){
+            tamGiac4 += "&nbsp&nbsp&nbsp";
+        }
+        //in kí tự *
+        for (let j = 1; j <= x; j++) {
+            tamGiac4 += "* ";
+        }
+        x--;
+        tamGiac4 += "<br>";
+    }
+    document.getElementById('4').innerHTML = tamGiac4;
+</script>
+</html>
