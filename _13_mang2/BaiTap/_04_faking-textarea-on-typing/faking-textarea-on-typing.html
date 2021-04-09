@@ -1,0 +1,78 @@
+<html>
+<head>
+    <title>Faking Textarea on Typing</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <style>
+        textarea {
+            resize: none;
+        }
+    </style>
+
+</head>
+<body>
+<center>
+    <h2>Type anthing slowly</h2>
+    <div>
+        <form name="form" method="post" action="">
+            <textarea name="textArea" cols="150" rows="30" id="textArea" onkeyup="typeTextarea();"></textarea>
+        </form>
+    </div>
+</center>
+</body>
+<script>
+    let str = "<html>\n" +
+        "<head>\n" +
+        "    <title>Faking Textarea on Typing</title>\n" +
+        "    <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"/>\n" +
+        "    <style>\n" +
+        "        textarea {\n" +
+        "            resize: none;\n" +
+        "        }\n" +
+        "    </style>\n" +
+        "\n" +
+        "</head>\n" +
+        "<body>\n" +
+        "<center>\n" +
+        "    <h2>Type anthing slowly< /h2>\n" +
+        "    <div>\n" +
+        "        <form name=\"form\" method=\"post\" action=\"\">\n" +
+        "            < textarea name=\"textArea\" cols=\"40\" rows=\"10\" id=\"textArea\" onkeyup=\"typeTextarea();\"></textarea>\n" +
+        "        </form>\n" +
+        "    </div>\n" +
+        "</center>\n" +
+        "</body>\n" +
+        "< script>\n" +
+        "    let str = \"\", n = \"\";\n" +
+        "    function typeTextarea() {\n" +
+        "        let t = document.getElementById('textArea').value;\n" +
+        "        if (t.length > 0) {\n" +
+        "            for (let i = 0; i < t.length; i++) {\n" +
+        "                n += str[i];\n" +
+        "                if (i == str.length-1) {\n" +
+        "                    document.getElementById('textArea').value = \"\";\n" +
+        "                    n = \"\";\n" +
+        "                }\n" +
+        "            }\n" +
+        "        }\n" +
+        "        document.getElementById('textArea').value = n;\n" +
+        "        n = \"\";\n" +
+        "        setTimeout('typeTextarea()', 1);\n" +
+        "    }\n}< /script>\n < /html>";
+    let n = "";
+    function typeTextarea() {
+        let t = document.getElementById('textArea').value;
+        if (t.length > 0) {
+            for (let i = 0; i < t.length; i++) {
+                n += str[i];
+                if (i == str.length-1) {
+                    document.getElementById('textArea').value = "";
+                    n = "";
+                }
+            }
+        }
+        document.getElementById('textArea').value = n;
+        n = "";
+        setTimeout('typeTextarea()', 1);
+    }
+</script>
+</html>
