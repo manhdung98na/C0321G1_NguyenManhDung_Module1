@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+
+    let input = prompt("Nhập tên ngôi sao: ");
+    alert(input + " thuộc chòm sao " + bai5(input));
+    function bai5(str) {
+        for (let i = 0; i < arr1.length; i++) {
+            if (str == arr1[i]) {
+                return arr2[i];
+            }
+        }
+    }
+</script>
+</html>

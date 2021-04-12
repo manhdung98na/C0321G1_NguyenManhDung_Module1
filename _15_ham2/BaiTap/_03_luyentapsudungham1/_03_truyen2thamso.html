@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hàm truyền 2 tham số</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a,b;
+    do {
+        let str1 = prompt("a = ");
+        a = parseInt(str1);
+        let str2 = prompt("b = ");
+        b = parseInt(str2);
+        let check = a.toString().length == str1.trim().length && b.toString().length == str2.trim().length;
+        if (check) break;
+    }while (true)
+    alert(truyenHaiThamSo(a,b));
+    function truyenHaiThamSo(a,b){
+        if (a > b){
+            return (a + " > " + b).toString();
+        }else {
+            return a+b;
+        }
+    }
+</script>
+</html>
