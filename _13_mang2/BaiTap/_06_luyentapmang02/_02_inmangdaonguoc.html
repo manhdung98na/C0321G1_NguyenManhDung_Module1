@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In ra mảng đảo ngược</title>
+</head>
+<body>
+
+</body>
+<script>
+    let size;
+    do {
+        size = prompt("Nhập kích thước của mảng: ");
+    } while (size <= 0);
+    let arr = new Array(size);
+
+    //nhập mảng
+    for (let i = 0; i < size; i++) {
+        arr[i] = prompt("arr[" + i + "] = ");
+    }
+    //Đảo ngược mảng
+    let tempArr = new Array(size);
+    let indexTempArr = size - 1;
+    for (let i = 0; i < size; i++) {
+        tempArr[indexTempArr] = arr[i];
+        indexTempArr--;
+    }
+    alert("Mảng sau khi đảo ngược: " + tempArr.join(" "));
+
+</script>
+</html>
