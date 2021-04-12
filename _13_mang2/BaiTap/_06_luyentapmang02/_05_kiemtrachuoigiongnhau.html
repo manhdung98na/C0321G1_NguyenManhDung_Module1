@@ -8,9 +8,20 @@
 
 </body>
 <script>
-    let str1 = prompt("Chuỗi 1: ");
-    let str2 = prompt("Chuỗi 2: ");
-    if (str1 == str2) alert("Giống nhau");
+    let str1 = prompt("Chuỗi 1: ").trim();
+    let str2 = prompt("Chuỗi 2: ").trim();
+    let check = true;
+    if (str1.length != str2.length) {
+        check = false;
+    }
+    else {
+        for (let i = 0; i< str1.length; i++){
+            if (str1[i] != str2[i]) {
+                check = false;
+            }
+        }
+    }
+    if (check) alert("Bằng nhau");
     else alert("Khác nhau");
 </script>
 </html>
