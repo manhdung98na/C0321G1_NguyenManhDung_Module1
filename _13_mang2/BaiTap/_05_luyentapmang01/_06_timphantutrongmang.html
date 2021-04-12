@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm phần tử V trong mảng</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr[i] = parseInt(prompt("arr[" + i + "]"));
+    }
+    let v = parseInt(prompt("Nhập số nguyên cần tìm : V = "));
+    let check = false;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == v) {
+            check = true;
+            break;
+        }
+    }
+    if (check) alert("V is in the array");
+    else alert("V is NOT in the array");
+</script>
+</html>

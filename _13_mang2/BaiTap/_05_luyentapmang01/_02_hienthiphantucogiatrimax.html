@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị phần tử có giá trị lớn nhất trong mảng</title>
+</head>
+<body>
+
+</body>
+<script>
+    let array = [25, 15, 49, 3, 58, 9, 3, 0, 1, 10];
+    let max = array[0];
+    let index = 0;
+    for (let i = 1; i < array.length; i++) {
+        if (array[i] > max) {
+            max = array[i];
+            index = i;
+        }
+    }
+    alert("Phần tử lớn nhất trong mảng là " + max + " nằm tại vị trí thứ " + index + " (bắt đầu từ 0)");
+</script>
+</html>

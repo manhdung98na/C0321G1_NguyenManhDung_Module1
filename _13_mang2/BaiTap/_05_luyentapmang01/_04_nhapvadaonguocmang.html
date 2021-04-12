@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập và đảo ngược mảng</title>
+</head>
+<body>
+
+</body>
+<script>
+    let size;
+    do {
+        size = prompt("Kích thước mảng: ");
+    } while (size <= 0);
+    //Khai báo
+    let arr = [];
+
+    //nhập mảng từ bàn phím
+    for (let i = 0; i < size; i++) {
+        arr[i] = parseFloat(prompt("phần từ có index = " + i + ": "));
+    }
+    document.write(arr.reverse().toString());
+</script>
+</html>

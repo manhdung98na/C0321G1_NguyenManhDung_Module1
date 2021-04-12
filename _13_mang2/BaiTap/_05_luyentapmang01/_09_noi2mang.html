@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nối 2 mảng</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = new Array(10);
+    let b = new Array(10);
+    let c = new Array(20);
+    for (let i = 0; i < 10; i++) {
+        a[i] = parseInt(prompt("a[" + i + "] = "));
+    }
+    for (let i = 0; i < 10; i++) {
+        b[i] = parseInt(prompt("b[" + i + "] = "));
+    }
+    c = a.concat(b);
+    alert("Mảng c: " + c.join(" "));
+</script>
+</html>

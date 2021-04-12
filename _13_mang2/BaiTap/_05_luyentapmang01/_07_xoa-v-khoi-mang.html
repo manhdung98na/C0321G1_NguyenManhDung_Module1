@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xóa V khỏi mảng</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr[i] = parseInt(prompt("arr[" + i + "] = "));
+    }
+    console.log(arr.toString());
+    let v = parseInt(prompt("Nhập số nguyên V = "));
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == v) {
+            for(let j = i; j< arr.length; j++){
+                arr[j] = arr[j + 1];
+            }
+            arr[arr.length-1] = 0;
+            break;
+        }
+    }
+    console.log(arr.length)
+    document.write(arr.toString());
+
+</script>
+</html>
