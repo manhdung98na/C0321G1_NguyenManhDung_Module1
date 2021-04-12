@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi giữa feet và meters</title>
+    <style>
+        body{
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <input id="meters" type="number" placeholder="Nhập độ dài tính theo mét" oninput="metersToFeet()">
+    <span id="returnFeet">Kết quả: </span>
+    <hr>
+    <input id="feet" type="number" placeholder="Nhập độ dài tính theo feet" oninput="feetToMeter()">
+    <span id="returnMeters">Kết quả: </span>
+
+</center>
+</body>
+<script>
+
+    function feetToMeter(){
+        let feet = document.getElementById('feet').value;
+        let result = 0.305 * feet;
+        document.getElementById('returnMeters').innerText = result.toString();
+    }
+    function metersToFeet(){
+        let meters = document.getElementById('meters').value;
+        let result = 3.279 * meters;
+        document.getElementById('returnFeet').innerText = result.toString();
+    }
+
+</script>
+</html>
