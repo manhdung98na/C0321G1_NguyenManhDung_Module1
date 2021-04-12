@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hàm kiểm tra số nguyên tố</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr = [];
+    for (let number = 2; number < 10000; number++) {
+        if (isPrime(number)){
+            arr.push(number);
+        }
+    }
+    document.write(arr.join(" "));
+    function isPrime(number) {
+        for (let i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+</script>
+</html>
