@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm min trong 3 số nguyên</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a, b, c;
+    do {
+        let strA = prompt('a = ');
+        a = parseInt(strA);
+        let strB = prompt('b = ');
+        b = parseInt(strB);
+        let strC = prompt('c = ');
+        c = parseInt(strC);
+        let check = a.toString().length != strA.length ||
+            b.toString().length != strB.length ||
+            c.toString().length != strC.length;
+        if (check) {
+            alert("Vui lòng kiểm tra lại định dạng input");
+        } else break;
+    } while (true);
+    alert("min trong 3 số = " + timMin(a, b, c));
+
+    function timMin(a, b, c) {
+        let min = a;
+        if (b < min) {
+            if (b < c) {
+                min = b;
+            } else {
+                min = c;
+            }
+        } else {
+            if (c < min) {
+                min = c;
+            }
+        }
+        return min;
+    }
+</script>
+</html>

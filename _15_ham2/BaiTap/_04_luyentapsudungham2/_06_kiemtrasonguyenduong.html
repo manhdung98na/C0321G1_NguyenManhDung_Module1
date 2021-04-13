@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra số nguyên dương</title>
+</head>
+<body>
+
+</body>
+<script>
+    let str, number;
+    let continuous;
+    do {
+        continuous = false;
+        str = prompt("Nhập vào 1 số: ");
+        if (str == "") continue;
+        for (let i = 0; i < str.length; i++) {
+            if ((str[i] < '0' || str[i] > '9') && str[i] != '.') {
+                continuous = true;
+                break;
+            }
+        }
+    } while (continuous);
+    if (kiemTraSoNguyenDuong(str)) alert(str + " là số nguyên dương");
+    else alert(str + " KHÔNG là số nguyên dương");
+
+    function kiemTraSoNguyenDuong(a) {
+        if (parseFloat(str) - parseInt(str) != 0) return false;
+        else {
+            if (a > 0) return true;
+            else return false;
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra xem có phải kí tự số hay ko</title>
+</head>
+<body>
+
+</body>
+<script>
+    let kiTu;
+    do {
+        kiTu = prompt("Nhập 1 kí tự: ");
+        if (kiTu.length <= 1) {
+            break;
+        } else alert("Vui lòng nhập vào 1 KÍ TỰ");
+    } while (true);
+    alert(isNumber(kiTu));
+
+    function isNumber(character) {
+        if (character >= 0 && character <= 9) return true;
+        else return false;
+    }
+</script>
+</html>

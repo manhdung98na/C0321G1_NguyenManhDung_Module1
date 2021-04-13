@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính bình phương của 1 số</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a;
+    do {
+        let str = prompt("Nhập số nguyên: ");
+        a = parseInt(str);
+        if (a.toString().length == str.trim().length) break;
+    }while (true);
+    alert(a + "^2 = " + tinhBinhPhuong(a));
+    function tinhBinhPhuong(number){
+      return number * number;
+    }
+</script>
+</html>

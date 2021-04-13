@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích và chu vi hình tròn</title>
+</head>
+<body>
+
+</body>
+<script>
+    let banKinh;
+    do {
+        let str = prompt("Nhập bán kính: ");
+        banKinh = parseInt(str);
+        if (banKinh.toString().length == str.trim().length) break;
+    }while (true);
+    alert("Chu vi = " + tinhChuVi(banKinh) +
+            "\nDiện tích = " + tinhDienTich(banKinh));
+
+    function tinhDienTich(banKinh){
+        return Math.PI * banKinh * banKinh;
+    }
+
+    function tinhChuVi(banKinh){
+        return 2 * Math.PI * banKinh;
+    }
+</script>
+</html>

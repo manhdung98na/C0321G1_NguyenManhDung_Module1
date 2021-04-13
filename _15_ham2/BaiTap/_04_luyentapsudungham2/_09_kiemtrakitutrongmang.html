@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra kí tự trong mảng</title>
+</head>
+<body>
+
+</body>
+<script>
+    //Nhập mảng kí tự
+    let size;
+    do {
+        let str = prompt("Nhập kích thước mảng kí tự: ");
+        size = parseInt(str);
+        if (size.toString().length == str.trim().length) break;
+    } while (true);
+    let arr = nhapMang(size);
+    console.log(arr.toString());
+    //Nhập kí tự tìm kiếm
+    let kiTu;
+    do {
+        kiTu = prompt("Nhập kí tự: ");
+        if (kiTu.length <= 1) break;
+    } while (true);
+    //Kiểm tra
+    let count = kiemTra(kiTu, arr);
+    if (count == -1) alert("Kí tự '" + kiTu + "' không xuất hiện trong mảng");
+    else alert("Kí tự '" + kiTu + "' xuất hiện " + count + " lần");
+
+
+    //Hàm
+    function nhapMang(size) {
+        let arr = new Array(size);
+        for (let i = 0; i < size; i++) {
+            arr[i] = prompt("arr[" + i + "]");
+        }
+        return arr;
+    }
+
+    function kiemTra(kiTu, array) {
+        let count = 0;
+        for (let element of array) {
+            if (element == kiTu) {
+                count++;
+            }
+        }
+        if (count != 0) return count;
+        else return -1;
+    }
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đổi chỗ 2 số</title>
+</head>
+<body>
+
+</body>
+<script>
+    const a = {
+        value : 5
+    }
+    const b = {
+        value : 9
+    }
+
+    function swap(a, b) {
+        let temp = a.value;
+        a.value = b.value;
+        b.value = temp;
+    }
+    swap(a,b);
+    alert(a.value + "  " + b.value);
+</script>
+</html>

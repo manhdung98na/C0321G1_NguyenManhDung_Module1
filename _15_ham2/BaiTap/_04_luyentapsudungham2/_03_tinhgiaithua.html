@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giai thừa</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a;
+    do {
+        let str = prompt("Nhập số nguyên: ");
+        a = parseInt(str);
+        if (a.toString().length == str.trim().length) {
+            let giaiThua = tinhGiaiThua(a);
+            if (giaiThua != -1) {
+                alert(a + "! = " + giaiThua);
+                break;
+            }
+        }
+    } while (true);
+
+
+    function tinhGiaiThua(number) {
+        if (number <= 0) return -1;
+        else if (number == 1) return 1;
+        else return number * tinhGiaiThua(number - 1);
+    }
+</script>
+</html>
