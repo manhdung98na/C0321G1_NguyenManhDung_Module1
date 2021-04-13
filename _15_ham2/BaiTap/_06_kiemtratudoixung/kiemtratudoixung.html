@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra từ đối xứng</title>
+</head>
+<body>
+
+</body>
+<script>
+    let str = "12321";
+    alert(isPalindrome(str));
+
+    function isPalindrome(string){
+        if (string.length <= 1) return true;
+        else {
+            if (string[0] != string[string.length-1]){
+                return false;
+            }else {
+                let newString = string.toString().substring(1, string.length - 1);
+                console.log(newString);
+                return isPalindrome(newString);
+            }
+        }
+    }
+</script>
+</html>
