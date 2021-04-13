@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng quản lý sản phẩm</title>
+    <style>
+        body {
+            display: block;
+            text-align: -webkit-center;
+        }
+
+        #txtAdd {
+            border: 1px solid gray;
+            border-radius: 10px;
+            border-collapse: collapse;
+            width: 300px;
+            height: 30px;
+        }
+
+        button {
+            border: 1px solid rgba(80, 175, 80, 0.6);
+            border-radius: 10px;
+            border-collapse: collapse;
+            width: 50px;
+            height: 35px;
+            background-color: rgba(30, 181, 0, 0.56);
+            color: white;
+            cursor: pointer;
+            outline: none;
+        }
+
+        button:active {
+            border: none;
+            width: 50px;
+            height: 35px;
+            background-color: rgba(30, 181, 0, 0.65);
+            color: white;
+            cursor: pointer;
+        }
+
+
+        table {
+            border-collapse: collapse;
+            width: 600px;
+        }
+
+        td {
+            padding: 8px;
+        }
+
+        tr:nth-child(even){
+            background-color: rgba(197,197,197,0.25);
+        }
+
+        .backgroundGrey {
+            background-color: rgba(242, 242, 242, 0.6);
+            width: 400px;
+            border-radius: 10px;
+            border-collapse: collapse;
+            padding-top: 30px;
+            padding-bottom: 40px;
+        }
+        #soLuongSP{
+            text-align: right;
+            padding-right: 30%;
+            font-size: larger;
+            color: #c62700;
+        }
+    </style>
+</head>
+<body onload="display()">
+<h2><label id="addAndEdit" for="txtAdd">Add New Product</label></h2>
+<div class="backgroundGrey">
+    <input type="text" id="txtAdd" placeholder="Nhập tên sản phẩm mới">
+    <button id="btAdd" class="button" value="Add" onclick="add()">Add</button>
+</div>
+<h2><label>Display All Product</label></h2>
+<div>
+    <p id="soLuongSP"></p>
+    <p id="result"></p>
+</div>
+</body>
+<script>
+    //Khởi tạo mảng lưu trữ
+    let arr = ["Sony Xperia", "Samsung Galaxy", "Nokia 6", "Xiaomi Redmi Note 4", "Apple iPhone 6S", "Xiaomi Mi 5s Plus", "Apple iPhone 8 Plus", "Oppo A71"];
+
+
+    //Các hàm chức năng
+    function display() {
+        let tableString = '<table border="0">';
+        for (let row = 0; row < arr.length; row++) {
+            tableString += '<tr>' +
+                '<td style="width: 60%"><span id="' + row + '">' + arr[row] + '</span></td>' +
+                '<td style="text-align: center"><button class="button" value="Edit" onclick="edit(document.getElementById(\'' + row + '\'))">Edit</button></td>' +
+                '<td style="text-align: center"><button class="button" value="Delete" onclick="remove(document.getElementById(\'' + row + '\'))">Delete</button></td>' +
+                '</tr>';
+        }
+        document.getElementById('result').innerHTML = tableString;
+        document.getElementById('soLuongSP').innerHTML = arr.length.toString() + " products";
+
+    }
+
+    function edit(getElementById) {
+        let index = getElementById.id;
+        let editedObj;
+        do {
+            editedObj = prompt("Bạn muốn chỉnh sửa thành: ");
+            if (editedObj == "") {
+                alert("KHÔNG ĐƯỢC ĐỂ TRỐNG!!!");
+            }else break;
+        }
+        while (true);
+        if (editedObj != null) {
+            arr[index] = editedObj;
+        }
+        display();
+    }
+
+    function add() {
+        let newObj = document.getElementById('txtAdd').value;
+        if (newObj != "") {
+            arr.push(newObj);
+        }
+        document.getElementById('txtAdd').value = "";
+        display();
+    }
+
+    function remove(getId) {
+        let index = getId.id;
+        let isDelete = confirm("Xóa nhận xóa: " + arr[index]);
+        if (isDelete) {
+            arr.splice(index, 1);
+        }
+        display();
+    }
+</script>
+</html>
