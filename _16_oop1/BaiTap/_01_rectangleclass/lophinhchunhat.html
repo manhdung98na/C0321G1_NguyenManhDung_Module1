@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lớp hình chữ nhật</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<center>
+    <p id="result"></p>
+</center>
+<canvas id="canvas" width="" height=""></canvas>
+</body>
+<script>
+    //Định nghĩa đối tương Hình chữ nhật
+    let Rectangle = function (chieuDai, chieuRong) {
+        this.chieuDai = chieuDai;
+        this.chieuRong = chieuRong;
+
+        this.setChieuDai = function (chieuDai) {
+            this.chieuDai = chieuDai;
+        }
+        this.setChieuRong = function (chieuRong) {
+            this.chieuRong = chieuRong;
+        }
+        this.getChieuDai = function () {
+            return this.chieuDai;
+        }
+        this.getChieuRong = function () {
+            return this.chieuRong;
+        }
+        this.getArea = function () {
+            return this.chieuDai * this.chieuRong;
+        }
+        this.getPerimeter = function () {
+            return 2 * (this.chieuDai + this.chieuRong);
+        }
+        this.toString = function () {
+            return "Hình chữ nhật có diện tích = " + this.getArea() + " và chu vi = " + this.getPerimeter();
+        }
+        this.draw = function () {
+            let canvas = document.getElementById("canvas");
+            let ctx = canvas.getContext("2d");
+            canvas.width = document.documentElement.clientWidth;
+            canvas.height = document.documentElement.clientHeight;
+            ctx.moveTo(canvas.width / 2 - this.chieuDai / 2, canvas.height / 2 - this.chieuRong / 2);
+            ctx.lineTo(canvas.width / 2 + this.chieuDai / 2, canvas.height / 2 - this.chieuRong / 2);
+            ctx.lineTo(canvas.width / 2 + this.chieuDai / 2, canvas.height / 2 + this.chieuRong / 2);
+            ctx.lineTo(canvas.width / 2 - this.chieuDai / 2, canvas.height / 2 + this.chieuRong / 2);
+            ctx.lineTo(canvas.width / 2 - this.chieuDai / 2, canvas.height / 2 - this.chieuRong / 2);
+            ctx.lineWidth = 1;
+            ctx.fillStyle = "grey";
+            ctx.fillRect(canvas.width / 2 - this.chieuDai / 2, canvas.height / 2 - this.chieuRong / 2, this.chieuDai, this.chieuRong);
+            ctx.stroke();
+        }
+        this.clear = function () {
+            let canvas = document.getElementById("canvas");
+            let ctx = canvas.getContext("2d");
+            canvas.width = document.documentElement.clientWidth;
+            canvas.height = document.documentElement.clientHeight;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+    }
+
+    function thayDoiCanh() {
+        let dai, rong;
+        do {
+            dai = prompt("Thay đổi chiều dài = ");
+            rong = prompt("Thay đổi chiều rộng = ");
+            if (parseFloat(dai) == dai && parseFloat(rong) == rong && parseFloat(dai) >= parseFloat(rong)) {
+                dai = parseFloat(dai);
+                rong = parseFloat(rong);
+                break;
+            }
+        } while (true)
+        console.log(dai + " " + rong);
+        recta.setChieuDai(dai);
+        recta.setChieuRong(rong);
+        recta.clear();
+        recta.draw();
+        document.getElementById('result').innerText = recta.toString();
+    }
+
+    //Chương trình js
+    let recta = new Rectangle(500, 330);
+    recta.draw();
+    document.getElementById('result').innerText = recta.toString();
+    setTimeout('thayDoiCanh()', 3000);
+</script>
+</html>
