@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lớp Temperature</title>
+</head>
+<body>
+
+</body>
+<script>
+    let Temperature = function (nhietDo){
+        this.doC = nhietDo;
+
+        this.convertCtoF = function (){
+            return 9/5 * this.doC + 32;
+        }
+        this.convertCtoK = function (){
+            return this.doC + 273.15;
+        }
+    }
+
+    let temper = new Temperature(25);
+    alert(temper.doC + " độ C = " + temper.convertCtoF() + " độ F  =  " + temper.convertCtoK() + " độ K");
+
+</script>
+</html>
