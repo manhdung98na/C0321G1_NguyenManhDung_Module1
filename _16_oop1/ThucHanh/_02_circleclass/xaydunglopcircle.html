@@ -10,7 +10,9 @@
 <script>
     let Circle = function (radius){
         this.radius = radius;
-
+        this.Circle = function (){
+            this.radius = 3;
+        }
         this.getRadius = function (){
             return this.radius;
         }
@@ -18,11 +20,11 @@
             return (Math.PI * this.radius * this.radius).toFixed(3);
         }
         this.toString = function (){
-            return "radius: " + this.radius + "; area: " + this.getArea();
+            return "radius: " + this.getRadius() + "; area: " + this.getArea();
         }
     }
 
-    let circle = new Circle(2);
+    let circle = new Circle(3);
     alert(circle.toString());
 </script>
 </html>
