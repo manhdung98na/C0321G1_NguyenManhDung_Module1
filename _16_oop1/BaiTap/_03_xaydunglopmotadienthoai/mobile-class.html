@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lớp mô tả điện thoại</title>
+    <style>
+        button {
+            width: 150px;
+            text-align: center;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .image {
+            width: 10%;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <table border="0" cellspacing="0" cellpadding="8px" style="width: 100%">
+        <tr>
+            <td rowspan="9" class="image"><img src="images/nokia.jpg" style="width: 150px; height: 200px"></td>
+            <td><p id="nameNokia"></p></td>
+            <td style="text-align: right"><p id="nameIphone"></p></td>
+            <td rowspan="9" class="image"><img src="images/iphone.jpg" width="150px" height="300px"></td>
+        </tr>
+        <tr>
+            <td id="phanTramPinNokia"></td>
+            <td style="text-align: right" id="phanTramPinIphone"></td>
+        </tr>
+        <tr>
+            <td id="statusNokia"></td>
+            <td style="text-align: right" id="statusIphone"></td>
+        </tr>
+
+        <!--        On/Off-->
+        <tr>
+            <td>
+                <button id="onOffNokia" value="nokia" onclick="onOff(this.value)">Bật/Tắt</button>
+            </td>
+            <td>
+                <button id="onOffIphone" value="iphone" onclick="onOff(this.value)" class="right">Bật/Tắt</button>
+            </td>
+        </tr>
+
+        <!--        CreateNewMessage-->
+        <tr>
+            <td>
+                <button id="btSoanTinNhanNokia" value="nokia" onclick="createNewMessage(this.value)">Soạn tin nhắn
+                </button>
+            </td>
+            <td>
+                <button id="btSoanTinNhanIphone" value="iphone" onclick="createNewMessage(this.value)" class="right">
+                    Soạn tin nhắn
+                </button>
+            </td>
+        </tr>
+
+        <!--        SendMessage-->
+        <tr>
+            <td>
+                <button id="btGuiTinNhanNokia" value="nokia" onclick="sendMessage(this.value)">Gửi tin
+                    nhắn
+                </button>
+            </td>
+            <td>
+                <button id="btGuiTinNhanIphone" value="iphone" onclick="sendMessage(this.value)" class="right">Gửi tin
+                    nhắn
+                </button>
+            </td>
+        </tr>
+
+        <!--        Receive Message-->
+        <tr>
+            <td>
+                <button id="btNhanTinNhanNokia" value="nokia" onclick="receiveMessage(this.value)">Nhận tin
+                    nhắn
+                </button>
+            </td>
+            <td>
+                <button id="btNhanTinNhanIphone" value="iphone" onclick="receiveMessage(this.value)" class="right">Nhận
+                    tin nhắn
+                </button>
+            </td>
+        </tr>
+
+        <!--        Inbox-->
+        <tr>
+            <td>
+                <button id="btHopThuDenNokia" value="nokia" onclick="displayInbox(this.value)">Xem hộp thư đến</button>
+            </td>
+            <td>
+                <button id="btHopThuDenIphone" value="iphone" onclick="displayInbox(this.value)" class="right">Xem hộp
+                    thư đến
+                </button>
+            </td>
+        </tr>
+
+        <!--        Sent-->
+        <tr>
+            <td>
+                <button id="btThuDaGuiNokia" value="nokia" onclick="displaySent(this.value)">Xem thư đã gửi</button>
+            </td>
+            <td>
+                <button id="btThuDaGuiIphone" value="iphone" onclick="displaySent(this.value)" class="right">Xem thư đã
+                    gửi
+                </button>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+<script>
+    let Mobile = function (name, phanTramPin) {
+        this.name = name;
+        this.phanTramPin = phanTramPin;
+        this.tinNhanDangSoan = "";
+        this.hopThuDen = [];
+        this.thuDaGui = [];
+        this.statusOn = true;
+
+        //kiểm tra điện thoại có đang bật hay ko
+        this.isOn = function () {
+            return !!(this.phanTramPin > 0 && this.statusOn);
+        }
+        //tắt điện thoại
+        this.turnOff = function () {
+            this.statusOn = false;
+        }
+        //mở điện thoại
+        this.turnOn = function () {
+            if (this.phanTramPin > 0) this.statusOn = true;
+            else this.statusOn = false;
+        }
+        //sạc pin
+        this.sacPin = function () {
+            while (this.phanTramPin < 100) {
+                setTimeout('this.phanTramPin++', 1000)
+            }
+        }
+
+        //Soạn tin nhắn
+        this.soanTinNhan = function () {
+            if (this.isOn()) {
+                this.phanTramPin--;
+                let str = prompt("Nội dung tin nhắn: ");
+                if (str != "") {
+                    this.tinNhanDangSoan = str;
+                }
+            }
+            return this.tinNhanDangSoan;
+        }
+
+        //Gửi tin nhắn
+        this.guiTinNhan = function () {
+            if (this.isOn()) {
+                this.phanTramPin--;
+                let noiDungGui;
+                if (this.tinNhanDangSoan == "") {
+                    noiDungGui = prompt("Nội dung tin nhắn muốn gửi: ");
+                } else {
+                    noiDungGui = this.tinNhanDangSoan;
+                }
+                if (noiDungGui != "") {
+                    let xacNhan = confirm("Xác nhận gửi?");
+                    if (xacNhan) {
+                        this.thuDaGui.unshift(noiDungGui);
+                        this.tinNhanDangSoan = "";
+                        return noiDungGui;
+                    } else {
+                        this.tinNhanDangSoan = noiDungGui;
+                        this.tinNhanDangSoan = "";
+                        return false;
+                    }
+                } else {
+                    alert("Nội dung không được để trống!");
+                    return false;
+                }
+            }
+        }
+
+        //Nhận tin nhắn từ máy khác
+        this.nhanTinNhan = function (message) {
+            if (this.isOn()) {
+                this.phanTramPin--;
+                if (message != "") {
+                    this.hopThuDen.unshift(message);
+                    alert("Bạn nhận được tin nhắn mới: \n" + message);
+                } else alert("Bạn không có tin nhắn mới!");
+            }
+        }
+
+        //Xem hộp thư đến
+        this.xemHopThuDen = function () {
+            if (this.isOn()) {
+                this.phanTramPin--;
+                if (this.hopThuDen.length == 0) return "Hộp thư đến rỗng";
+                else return "Hộp thư đến: \n" + this.hopThuDen.join("\n");
+            }
+        }
+        //Xem thư đã gửi
+        this.xemThuDaGui = function () {
+            if (this.isOn()) {
+                this.phanTramPin--;
+                if (this.thuDaGui.length == 0) return "Hộp thư đã gửi rỗng";
+                else return "Thư đã gửi: \n" + this.thuDaGui.join("\n");
+            }
+        }
+    }
+
+    //Bắt đầu chương trình
+    let messageNokiaToIphone = "", messageIphoneToNokia = "";
+    let nokia = new Mobile("Nokia", 100);
+    let iphone = new Mobile("Iphone", 10);
+    display();
+
+    function display() {
+        document.getElementById('nameNokia').innerText = "Tên: " + nokia.name;
+        document.getElementById('phanTramPinNokia').innerText = "Pin: " + nokia.phanTramPin + "dv";
+        if (nokia.isOn()) {
+            document.getElementById('statusNokia').innerText = "On";
+            document.getElementById('btNhanTinNhanNokia').disabled = "";
+            document.getElementById('btGuiTinNhanNokia').disabled = "";
+            document.getElementById('btSoanTinNhanNokia').disabled = "";
+            document.getElementById('btHopThuDenNokia').disabled = "";
+            document.getElementById('btThuDaGuiNokia').disabled = "";
+
+        } else {
+            document.getElementById('statusNokia').innerText = "Off";
+            document.getElementById('btNhanTinNhanNokia').disabled = "disabled";
+            document.getElementById('btGuiTinNhanNokia').disabled = "disabled";
+            document.getElementById('btSoanTinNhanNokia').disabled = "disabled";
+            document.getElementById('btHopThuDenNokia').disabled = "disabled";
+            document.getElementById('btThuDaGuiNokia').disabled = "disabled";
+        }
+
+        document.getElementById('nameIphone').innerText = "Tên: " + iphone.name;
+        document.getElementById('phanTramPinIphone').innerText = "Pin: " + iphone.phanTramPin + "dv";
+        if (iphone.isOn()) {
+            document.getElementById('statusIphone').innerText = "On";
+            document.getElementById('btNhanTinNhanIphone').disabled = "";
+            document.getElementById('btGuiTinNhanIphone').disabled = "";
+            document.getElementById('btSoanTinNhanIphone').disabled = "";
+            document.getElementById('btHopThuDenIphone').disabled = "";
+            document.getElementById('btThuDaGuiIphone').disabled = "";
+
+        } else {
+            document.getElementById('statusIphone').innerText = "Off";
+            document.getElementById('btNhanTinNhanIphone').disabled = "disabled";
+            document.getElementById('btGuiTinNhanIphone').disabled = "disabled";
+            document.getElementById('btSoanTinNhanIphone').disabled = "disabled";
+            document.getElementById('btHopThuDenIphone').disabled = "disabled";
+            document.getElementById('btThuDaGuiIphone').disabled = "disabled";
+        }
+    }
+
+    //Hàm bắt sự kiện onclick
+    function onOff(value) {
+        let obj;
+        if (value == "iphone") {
+            obj = iphone;
+        } else obj = nokia;
+        obj.isOn() ? obj.turnOff() : obj.turnOn();
+        display();
+    }
+
+    function createNewMessage(value) {
+        let obj;
+        if (value == "nokia") {
+            obj = nokia;
+        } else obj = iphone;
+        obj.soanTinNhan();
+        display();
+    }
+
+    function sendMessage(value) {
+        if (value == "nokia") {
+            messageNokiaToIphone = nokia.guiTinNhan();
+        } else {
+            messageIphoneToNokia = iphone.guiTinNhan();
+        }
+        display();
+    }
+
+    function receiveMessage(value) {
+        let obj;
+        let message;
+        if (value == "nokia") {
+            obj = nokia;
+            message = messageIphoneToNokia;
+        } else {
+            obj = iphone;
+            message = messageNokiaToIphone;
+        }
+        obj.nhanTinNhan(message)
+        display();
+    }
+
+    function displayInbox(value) {
+        let obj;
+        if (value == "nokia") {
+            obj = nokia;
+        } else obj = iphone;
+        alert(obj.xemHopThuDen());
+        display();
+    }
+
+    function displaySent(value) {
+        let obj;
+        if (value == "nokia") {
+            obj = nokia;
+        } else obj = iphone;
+        alert(obj.xemThuDaGui());
+        display();
+    }
+
+</script>
+</html>
