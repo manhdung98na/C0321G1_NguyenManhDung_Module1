@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game lái xe</title>
+    <style>
+        img{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+<img id="img" src="images/car.jpg" width="200px" height="250px" alt="car">
+<canvas id="canvas" width="1000px" height="750px" style="border: 1px solid grey"></canvas>
+
+</body>
+<script>
+    let canvas = document.getElementById('canvas');
+    let ctx = canvas.getContext("2d");
+    ctx.drawImage(document.getElementById('img'), 10,10);
+</script>
+</html>

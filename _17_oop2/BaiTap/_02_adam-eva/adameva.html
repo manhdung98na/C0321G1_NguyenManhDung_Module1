@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adam và Eva</title>
+</head>
+<body>
+
+</body>
+<script>
+    class Apple {
+        _weight;
+
+        constructor() {
+            this._weight = 10;
+        }
+        setWeight(weight){
+            this._weight = weight;
+        }
+        getWeight(){
+            return this._weight;
+        }
+        decrease(){
+            this._weight--;
+        }
+        isEmpty(){
+            return this._weight == 0;
+        }
+    }
+
+    class Human {
+        _name;
+        _gender;
+        _weight;
+        constructor() {
+            this._name = "Adam";
+            this._gender = true; //true = nam; false = nữ
+            this._weight = 60;
+        }
+        setName(name){
+            this._name = name;
+        }
+        setGender(gender){
+            this._gender = gender;
+        }
+        setWeight(weight){
+            this._weight = weight;
+        }
+        getName(){
+            return this._name;
+        }
+        getWeight(){
+            return this._weight;
+        }
+        isMale(){
+            return this._gender;
+        }
+        checkApple(apple){
+            return apple.getWeight();
+        }
+        eat(apple){
+            if (!apple.isEmpty()){
+                this._weight++;
+                apple.decrease();
+            }else console.log("Táo đã hết");
+        }
+        say(){
+            console.log("Hi, I'm " + this.getName() + ", and my weight now is "+this.getWeight());
+        }
+    }
+
+    let apple = new Apple();
+    let human = new Human();
+    human.say();
+    console.log("Quả táo còn " + human.checkApple(apple));
+    human.eat(apple);
+    console.log("Quả táo còn " + human.checkApple(apple));
+    console.log("Khối lượng hiện tại của " + human.getName() + " là:" +human.getWeight());
+</script>
+</html>
