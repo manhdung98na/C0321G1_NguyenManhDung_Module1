@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mèo bắt chuột</title>
+</head>
+<body>
+
+</body>
+<script>
+    class Animal {
+        name;
+        weight;
+        speed;
+        constructor(name, weight, speed) {
+            this.name = name;
+            this.weight = weight;
+            this.speed = speed;
+        }
+        makeNoise() {}
+        getWeight(){
+            return this.weight;
+        }
+    }
+    class Mice extends Animal{
+        status;
+        constructor(name,weight,speed,status) {
+            super(name, weight, speed);
+            this.status = status;
+        }
+        makeNoise() {
+            console.log("Need to try more, stupid cat!");
+        }
+    }
+    class Cats extends Animal{
+        constructor(name,weight,speed) {
+            super(name, weight, speed);
+        }
+        catchMice(mouse){
+            if (this.speed > mouse.speed){
+                return true;
+            }else {
+                mouse.makeNoise();
+                return false;
+            }
+        }
+        eatMice(mouse){
+            if (this.catchMice(mouse) && mouse.status){
+                this.weight += mouse.weight;
+                mouse.status = false;
+            }
+        }
+        makeNoise() {
+            console.log("You should thank me 'cause i have just given you a new life in heaven!");
+        }
+    }
+
+    let cat = new Cats("Tom", 10, 20);
+    let mouse = new Mice("Jerry", 9, 15, true);
+    cat.eatMice(mouse);
+    console.log("after" + cat.getWeight());
+</script>
+</html>
