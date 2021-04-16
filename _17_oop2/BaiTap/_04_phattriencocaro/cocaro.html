@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phát triển cờ caro</title>
+    <style>
+        body {
+            display: block;
+            text-align: -webkit-center;
+            padding-top: 40px;
+        }
+
+        td {
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+<p id="table"></p>
+</body>
+<script>
+    class Player {
+        character = "";
+        arr;
+
+        //hàm dựng
+        constructor(character) {
+            this.character = character;
+            this.arr = new Array(20);
+            for (let i = 0; i < 20; i++) {
+                this.arr[i] = new Array(20);
+                for (let j = 0; j < 20; j++) {
+                    this.arr[i][j] = "";
+                }
+            }
+        }
+
+        //đánh vào ô tọa độ [i,j]
+        play(i, j) {
+            document.getElementById(i + '+' + j).innerHTML = this.character;
+            this.arr[i][j] = this.character;
+        }
+
+        //kiểm tra win
+        isWin() {
+            for (let i = 0; i < 20; i++) {
+                for (let j = 0; j < 20; j++) {
+                    let ngang, doc, cheoLen, cheoXuong;
+                    try {
+                        ngang = this.arr[i][j] == this.character && this.arr[i][j + 1] == this.character && this.arr[i][j + 2] == this.character && this.arr[i][j + 3] == this.character && this.arr[i][j + 4] == this.character;
+                    }catch (e){
+                        // continue;
+                    }
+                    try{
+                        doc = this.arr[i][j] == this.character && this.arr[i + 1][j] == this.character && this.arr[i + 2][j] == this.character && this.arr[i + 3][j] == this.character && this.arr[i + 4][j] == this.character;
+                    }catch (e){
+                        // continue;
+                    }
+                    try{
+                        cheoLen = this.arr[i][j] == this.character && this.arr[i - 1][j + 1] == this.character && this.arr[i - 2][j + 2] == this.character && this.arr[i - 3][j + 3] == this.character && this.arr[i - 4][j + 4] == this.character;
+                    }catch (e){
+                        // continue;
+                    }
+                    try{
+                        cheoXuong = this.arr[i][j] == this.character && this.arr[i + 1][j + 1] == this.character && this.arr[i + 2][j + 2] == this.character && this.arr[i + 3][j + 3] == this.character && this.arr[i + 4][j + 4] == this.character;
+                    }catch (e){
+                        // continue;
+                    }
+                    if (ngang || doc || cheoLen || cheoXuong) {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+    }
+
+    //Vẽ bàn cờ
+    let tableStr = '<table border="1" cellspacing="0" cellpadding="">';
+    for (let i = 0; i < 20; i++) {
+        tableStr += '<tr>'
+        for (let j = 0; j < 20; j++) {
+            tableStr += '<td onclick="play(' + i + ',' + j + ')"><span id="' + i + '+' + j + '" style="position: relative; left: 8px"></span></td>'
+        }
+        tableStr += '</tr>';
+    }
+    document.getElementById('table').innerHTML = tableStr;
+
+    //Khởi tạo người chơi
+    let playerX = new Player('X');
+    let playerO = new Player('O');
+    let turnX = true;
+
+    //bắt sự kiện
+    function play(i, j) {
+        if (turnX) {
+            playerX.play(i, j);
+            if (playerX.isWin()) {
+                alert("X win");
+                location.reload();
+            }
+            turnX = false;
+        } else {
+            playerO.play(i, j);
+            if (playerO.isWin()) {
+                alert("O win");
+                location.reload();
+            }
+            turnX = true;
+        }
+    }
+</script>
+</html>
