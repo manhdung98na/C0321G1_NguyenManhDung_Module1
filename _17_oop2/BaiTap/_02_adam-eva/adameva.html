@@ -32,10 +32,10 @@
         _name;
         _gender;
         _weight;
-        constructor() {
-            this._name = "Adam";
-            this._gender = true; //true = nam; false = nữ
-            this._weight = 60;
+        constructor(name, gender, weight) {
+            this._name = name;
+            this._gender = gender; //true = nam; false = nữ
+            this._weight = weight;
         }
         setName(name){
             this._name = name;
@@ -70,11 +70,21 @@
     }
 
     let apple = new Apple();
-    let human = new Human();
-    human.say();
-    console.log("Quả táo còn " + human.checkApple(apple));
-    human.eat(apple);
-    console.log("Quả táo còn " + human.checkApple(apple));
-    console.log("Khối lượng hiện tại của " + human.getName() + " là:" +human.getWeight());
+    let adam = new Human("Adam", true, 60);
+    let eva = new Human("Eva", false, 50);
+    adam.say();
+    eva.say();
+    let adamTurn = true;
+    while (apple.getWeight()>0) {
+        let obj;
+        if (adamTurn) {
+            obj = adam;
+        }else obj = eva;
+        console.log(obj.getName() + " ăn táo");
+        obj.eat(apple);
+        console.log("Quả táo còn " + obj.checkApple(apple));
+        console.log("Khối lượng hiện tại của " + obj.getName() + " là:" + obj.getWeight());
+        adamTurn = !adamTurn;
+    }
 </script>
 </html>
