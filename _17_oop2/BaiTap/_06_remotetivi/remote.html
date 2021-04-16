@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Điều khiển tivi</title>
+</head>
+<body>
+
+</body>
+<script>
+    class Remote {
+        code;
+        tivi;
+
+        constructor(code, tivi) {
+            this.code = code;
+            this.tivi = tivi;
+        }
+
+        turnOff() {
+            this.tivi.setStatus(false);
+        }
+        turnOn(){
+            this.tivi.setStatus(true);
+        }
+        switchChannel() {
+            let channel = prompt("Chuyển đến kênh: ");
+            this.tivi.setChannel(channel);
+        }
+
+        adjustVolume() {
+            let volume = prompt("Volume hiện tại: " + this.tivi.getVolume() + "\n Bạn tăng âm lượng thành: ")
+            this.tivi.setVolume(volume);
+        }
+    }
+
+    class Tivi {
+        channel;
+        volume;
+        status;
+
+        constructor(channel, volume, status) {
+            this.channel = channel;
+            this.volume = volume;
+            this.status = status;
+        }
+
+        getChannel() {
+            return this.channel;
+        }
+
+        getVolume() {
+            return this.volume;
+        }
+
+        getStatus(){
+            return this.status;
+        }
+
+        setChannel(channel) {
+            if (this.getStatus()) {
+                this.channel = channel;
+            }else alert("Tivi đang tắt");
+        }
+
+        setVolume(volume) {
+            if (this.getStatus()) {
+                this.volume = volume;
+            }else alert("Tivi đang tắt");
+        }
+
+        setStatus(boolean) {
+            this.status = boolean;
+        }
+
+    }
+
+    let tivi = new Tivi(1,10, true);
+    let remote = new Remote("codeOfRemote", tivi);
+    remote.turnOn();
+    console.log("is On? " + tivi.getStatus());
+    remote.switchChannel();
+    console.log("channel: " + tivi.getChannel());
+    remote.switchChannel();
+    console.log("channel: " + tivi.getChannel());
+    remote.adjustVolume();
+    console.log("volume: " + tivi.getVolume());
+    remote.turnOff();
+    console.log("is On? " + tivi.getStatus());
+</script>
+</html>
