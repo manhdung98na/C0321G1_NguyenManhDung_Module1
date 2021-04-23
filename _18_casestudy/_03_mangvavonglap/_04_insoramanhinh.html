@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In ra màn hình</title>
+    <style>
+        body {
+            display: block;
+            text-align: -webkit-center;
+            padding-top: 200px;
+        }
+    </style>
+</head>
+<body>
+<input type="number" id="number" oninput="execute()">
+<p id="result"></p>
+</body>
+<script>
+    function execute() {
+        let number = document.getElementById('number').value;
+        let result = '';
+        let numberString = number.toString();
+        for (let i = 0; i < numberString.length; i++) {
+            switch (numberString.substring(i, i + 1)) {
+                case "0":
+                    result += " không";
+                    break;
+                case "1":
+                    result += " một";
+                    break;
+                case "2":
+                    result += " hai";
+                    break;
+                case "3":
+                    result += " ba";
+                    break;
+                case "4":
+                    result += " bốn";
+                    break;
+                case "5":
+                    result += " năm";
+                    break;
+                case "6":
+                    result += " sáu";
+                    break;
+                case "7":
+                    result += " bảy";
+                    break;
+                case "8":
+                    result += " tám";
+                    break;
+                case "9":
+                    result += " chín";
+                    break;
+                case ".":
+                    result += " phẩy";
+                    break;
+            }
+        }
+        document.getElementById('result'). innerHTML = result;
+    }
+</script>
+</html>

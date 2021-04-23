@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính thuế thu nhập và lương ròng của nhân viên</title>
+    <style>
+        body{
+            display: block;
+            padding-top: 100px;
+            padding-left: 300px;
+        }
+        input{
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+<input type="number" id="luong" placeholder="Nhập tiền lương (đơn vị triệu VND)">
+<button id="button" onclick="tinh()">Tính</button>
+<p id="result"></p>
+</body>
+<script>
+    function tinh() {
+        let luong = document.getElementById('luong').value;
+        let tax;
+        if (luong < 7) {
+            tax = 5 / 100;
+        } else if (luong < 15) {
+            tax = 10 / 100;
+        } else {
+            tax = 15 / 100;
+        }
+        let thueThuNhapCaNhan = (tax * luong).toFixed(3);
+        let luongRong = luong - thueThuNhapCaNhan;
+        document.getElementById('result').innerHTML = "Thuế thu nhập cá nhân = " + thueThuNhapCaNhan + " triệu VND<br>Lương ròng = " + luongRong + " triệu VND";
+    }
+
+</script>
+</html>

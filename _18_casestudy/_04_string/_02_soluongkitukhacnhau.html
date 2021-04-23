@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đếm số lượng kí tự khác nhau</title>
+    <style>
+        body{
+            display: block;
+            padding-left: 350px;
+            padding-top: 150px;
+        }
+    </style>
+</head>
+<body>
+<input type="text" id="text" placeholder="Type here" oninput="execute()">
+<p id="result"></p>
+</body>
+<script>
+    function execute() {
+        let string = document.getElementById('text').value;
+        if (string == '') {
+            document.getElementById('result').innerHTML = '';
+        } else {
+            document.getElementById('result').innerHTML = "Số các kí tự khác nhau trong chuỗi: " + differentSymbolsNaive(string);
+        }
+    }
+
+
+    //hàm này tính cả kí tự khoảng trắng
+    function differentSymbolsNaive(str) {
+        let input = str.toString();
+        let arr = [];
+        arr.push(input[0]);
+        for (let i = 1; i < input.length; i++) {
+            if (arr.indexOf(input[i]) != -1) {
+                continue;
+            } else {
+                arr.push(input[i]);
+            }
+        }
+        return arr.length;
+    }
+</script>
+</html>

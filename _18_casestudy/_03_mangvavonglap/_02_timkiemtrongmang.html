@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm kiếm phần tử trong mảng</title>
+    <style>
+        body {
+            padding-top: 32px;
+            padding-left: 32px;
+        }
+    </style>
+</head>
+<body>
+<p id="arrA"></p>
+<p id="arrB"></p>
+<p id="result"></p>
+</body>
+<script>
+    let a = [7, 2, 5, 3, 5, 3];
+    let b = [7, 2, 5, 4, 6, 3, 5, 9, 3, 10];
+    let result = [];
+    for (let ele of b){
+        if (a.find(elementOfA => elementOfA == ele)){
+            continue;
+        }
+        result.push(ele);
+    }
+    result.sort(function (x,y){
+        return x - y;
+    });
+    document.getElementById('arrA').innerHTML = "Mảng A: " + a.join(", ");
+    document.getElementById('arrB').innerHTML = "Mảng B: " + b.join(", ");
+    document.getElementById('result').innerHTML = "Phần tử xuất hiện ở B nhưng ko xuất hiện ở A: " + result.join(", ");
+</script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tam giác vuông cân rỗng</title>
+    <style>
+        body{
+            display: block;
+            padding-top: 100px;
+            padding-left: 300px;
+        }
+    </style>
+</head>
+<body>
+<p id="result"></p>
+</body>
+<script>
+    let chieuCao = 20;
+    let result = "";
+    for (let i = 1; i <= chieuCao; i++){
+        if (i == 1 || i == chieuCao){
+            for (let j = 1; j <= i; j++){
+                result += "*&nbsp";
+            }
+            result += "<br>";
+        }else {
+            result += "*";
+            for (let j = 2; j <= i; j++){
+                result += "&nbsp&nbsp&nbsp";
+            }
+            result += "*<br>"
+        }
+    }
+    document.getElementById('result').innerHTML = result;
+
+</script>
+</html>

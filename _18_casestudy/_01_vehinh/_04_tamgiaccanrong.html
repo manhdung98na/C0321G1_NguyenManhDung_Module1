@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tam giác cân rỗng</title>
+    <style>
+        body {
+            display: block;
+            padding-top: 100px;
+            padding-left: 300px;
+        }
+    </style>
+</head>
+
+<body>
+<p id="result"></p>
+</body>
+<script>
+    let chieuCao = 25;
+    let temp = chieuCao - 1;
+    let result = "";
+    for (let i = 0; i <= chieuCao - 2; i++) { //Xét duyệt chieuCao - 1 dòng (trừ dòng cuối cùng)
+        //in kí tự khoảng trắng đầu mỗi dòng
+        for (let j = 1; j <= temp; j++) {
+            result += "&nbsp&nbsp";
+        }
+        temp--;
+        result += "*";
+        //in khoảng trắng giữa 2 kí tự *
+        if (i != 0) {
+            for (let j = 1; j <= 2 * i - 1; j++) {
+                result += "&nbsp&nbsp";
+            }
+            result += "*<br>";
+        } else {
+            result += "<br>";
+        }
+    }
+    //in dòng cuối cùng
+    for (let i = 1; i <= 2 * chieuCao - 1; i++) {
+        result += "*";
+    }
+    document.getElementById('result').innerHTML = result;
+</script>
+</html>

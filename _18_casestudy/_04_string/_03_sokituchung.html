@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số kí tự chung</title>
+    <style>
+        body{
+            display: block;
+            padding-left: 350px;
+            padding-top: 150px;
+        }
+
+    </style>
+</head>
+<body>
+<span>String 1:<input type="text" id="s1" name="s1" placeholder="Type string1 here" oninput="execute()"></span><br><br>
+<span>String 2:<input type="text" id="s2" placeholder="Type string2 here" oninput="execute()"></span>
+<p id="result"></p>
+</body>
+<script>
+    function execute() {
+        let s1 = document.getElementById('s1').value;
+        let s2 = document.getElementById('s2').value;
+        document.getElementById('result').innerHTML = "Số kí tự giống nhau: " + commonCharacterCount(s1, s2);
+    }
+    //
+    function commonCharacterCount(s1, s2) {
+        let arr = [];
+        let temp = "";
+        for (let i = 0; i < s1.length; i++) {
+            let indexInS2 = s2.indexOf(s1[i]);
+            if (indexInS2 == -1) {
+                continue;
+            } else {
+                arr.push(s1[i]);
+                s2 = s2.slice(0, indexInS2) + s2.slice(indexInS2 + 1, s2.length);
+            }
+        }
+        return arr.length;
+    }
+</script>
+</html>

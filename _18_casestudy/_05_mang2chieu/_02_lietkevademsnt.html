@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Liệt kê và đếm số nguyên tố</title>
+</head>
+<body>
+<p id="arr"></p>
+<p id="result"></p>
+</body>
+<script>
+    let arr = [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        [11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+        [21, 22, 23, 24, 25, 26, 27, 28, 29, 30]];
+    let result = timSoNguyenTo(arr);
+    let arrStr = '';
+    for (let i = 0; i < arr.length; i++) {
+        arrStr += arr[i].join(" ") + "<br>";
+    }
+    document.getElementById('arr').innerHTML = "Mảng: <br>" + arrStr;
+    document.getElementById('result').innerHTML = "Số nguyên tố có trong mảng: <br>" + result.join(' ');
+
+
+    function timSoNguyenTo(arr) {
+        let result = [];
+        for (let i = 0; i < arr.length; i++) {
+            for (let ele of arr[i]) {
+                if (checkSNT(ele)) {
+                    result.push(ele);
+                }
+            }
+        }
+        return result;
+    }
+
+    function checkSNT(x) {
+        for (let i = 2; i <= Math.sqrt(x); i++) {
+            if (x % i == 0) return false; //không phải snt
+        }
+        return true; // là số nguyên tố
+    }
+</script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index của phân số lớn nhất trong mảng</title>
+    <style>
+        body {
+            display: block;
+            padding-top: 32px;
+            padding-left: 32px;
+        }
+    </style>
+</head>
+<body>
+<p id="arrA"></p>
+<p id="arrB"></p>
+<p id="result"></p>
+</body>
+<script>
+    let numerators = [5, 2, 5, 7, 1];
+    let denominators = [6, 3, 4, 2, 4];
+    let phanSoMax = numerators[0] / denominators[0];
+    let index = 0;
+    for (let i = 1; i<numerators.length; i++){
+        try {
+            if (numerators[i] / denominators[i] > phanSoMax){
+                phanSoMax = numerators[i] / denominators[i];
+                index = i;
+            }
+        }catch (e){
+            alert(denominators[i] + ' phải khác 0');
+        }
+
+    }
+    document.getElementById('arrA').innerHTML = "Numerators: " + numerators.join(", ");
+    document.getElementById('arrB').innerHTML = "Denominators: " + denominators.join(", ");
+    document.getElementById('result').innerHTML = "Phân số lớn nhất có chỉ số = " + index;
+</script>
+</html>

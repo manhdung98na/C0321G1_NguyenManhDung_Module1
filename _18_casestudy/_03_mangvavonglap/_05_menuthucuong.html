@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu thức uống</title>
+</head>
+<body>
+
+</body>
+<script>
+    class Menu{
+        drink;
+        money;
+        constructor(drink, money) {
+            this.drink = drink;
+            this.money = money;
+        }
+        setDrink(drink){
+            this.drink = drink;
+        }
+        getDrink(drink){
+            return this.drink;
+        }
+        setMoney(money){
+            this.money = money;
+        }
+        getMoney(money){
+            return this.money;
+        }
+    }
+
+    let menuArr = [new Menu("Cafe", 15000), new Menu("Cam vắt", 18000), new Menu("Nước ép cà rốt", 18000), new Menu("Nước ép cà chua", 16000), new Menu("Nước lọc", 8000), new Menu("Nước dừa", 10000)];
+    let menuStr = "";
+    for (let i = 0; i < menuArr.length; i++) {
+        menuStr += (i+1) + ". " + menuArr[i].getDrink() + "\n";
+    }
+    menuStr += "7. Exit";
+    let continueOrNot = true;
+    do {
+        let chooseDrink = prompt(menuStr + "\nChọn đồ uống: ");
+        if (chooseDrink < "1" || chooseDrink > "7"){
+            continue;
+        }
+
+        switch (chooseDrink){
+            case "1":
+            case "2":
+            case "3":
+            case "4":
+            case "5":
+            case "6":
+                let index = parseInt(chooseDrink) - 1;
+                let obj = menuArr[index];
+                let number = prompt(obj.getDrink() + "\nĐơn giá " + obj.getMoney()+"\nNhập số lượng: ");
+                if (number < "0" || parseInt(number) != number){
+                    continue;
+                }
+                let totalMoney = obj.getMoney() * parseInt(number);
+                alert(obj.getDrink()+"\nĐơn giá: " + obj.getMoney() + "\nSố lượng: " + number + "\n------------------\nThành tiền " + totalMoney);
+                break;
+            case "7":
+                continueOrNot = false;
+                break;
+        }
+    }while (continueOrNot);
+
+</script>
+</html>

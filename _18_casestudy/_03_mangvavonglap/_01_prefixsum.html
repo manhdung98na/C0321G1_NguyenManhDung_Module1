@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prefix Sum</title>
+    <style>
+        body {
+            display: block;
+            text-align: -webkit-center;
+            padding-top: 200px;
+        }
+    </style>
+</head>
+<body>
+<p id="arrA"></p>
+<input type="number" id="number">
+<button id="button" onclick="add()">Thêm vào mảng A</button>
+<p id="result"></p>
+<script>
+    let a = [];
+    function add() {
+        let b = [];
+        let temp = document.getElementById("number").value;
+        if (temp != '') {
+            a.push(parseInt(temp));
+        }
+        document.getElementById('number').value = '';
+        document.getElementById('arrA').innerHTML = "Mảng A: " + a.join(", ");
+        for (let i = 0; i < a.length; i++) {
+            let prefixSum = 0;
+            for (let j = 0; j <= i; j++) {
+                prefixSum += a[j];
+            }
+            b.push(prefixSum);
+        }
+        document.getElementById('result').innerHTML = "Mảng B: " + b.join(", ");
+
+    }
+
+</script>
+</html>

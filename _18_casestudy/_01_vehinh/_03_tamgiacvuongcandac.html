@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tam giác vuông cân đặc</title>
+    <style>
+        body{
+            display: block;
+            padding-top: 100px;
+            padding-left: 300px;
+        }
+    </style>
+</head>
+
+<body>
+<p id="result"></p>
+</body>
+<script>
+    let chieuCao = 15;
+    let khoangTrang = chieuCao - 1;
+    let result = "";
+    for (let i = 1; i <= chieuCao; i++) {
+        for (let j = 1; j <= khoangTrang; j++) {
+            result += "&nbsp&nbsp&nbsp";
+        }
+        for (let j = 1; j < 2 * i; j++) {
+            result += "&nbsp*";
+        }
+        result += "<br>";
+        khoangTrang--;
+    }
+    document.getElementById('result').innerHTML = result;
+
+</script>
+</html>

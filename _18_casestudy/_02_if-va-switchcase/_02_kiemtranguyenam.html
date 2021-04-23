@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra nguyên âm</title>
+    <style>
+        body {
+            display: block;
+            text-align: -webkit-center;
+            padding-top: 200px;
+        }
+    </style>
+</head>
+<body>
+<input type="text" id="character" placeholder="Nhập kí tự" maxlength="1" oninput="execute()">
+<p id="result"></p>
+</body>
+<script>
+    function execute() {
+        let character = document.getElementById('character').value;
+        if (character != "") {
+            switch (character.toLocaleLowerCase()) {
+                case 'o':
+                case 'u':
+                case 'i':
+                case 'a':
+                case 'e':
+                    document.getElementById('result').innerHTML = "Kí tự nhập vào là 1 nguyên âm";
+                    break;
+                default:
+                    if (character.toLocaleLowerCase() >= "a" && character.toLocaleLowerCase() <= "z") {
+                        document.getElementById('result').innerHTML = "Kí tự nhập vào là 1 phụ âm";
+                    } else document.getElementById('result').innerHTML = "Kí tự nhập vào KHÔNG PHẢI là 1 chữ cái";
+                    break;
+            }
+        }else document.getElementById('result').innerHTML = '';
+    }
+</script>
+</html>

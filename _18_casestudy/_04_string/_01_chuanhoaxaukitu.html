@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuẩn hóa xâu kí tự</title>
+    <style>
+        body {
+            display: block;
+            text-align: -webkit-center;
+            padding-top: 200px;
+        }
+    </style>
+</head>
+<body>
+<input type="text" placeholder="Type here" id="input" oninput="execute()">
+<button onclick="findMaxString()">Tìm xâu</button>
+<p id="result"></p>
+<p id="maxString"></p>
+
+</body>
+<script>
+    function execute() {
+        let strBefore = document.getElementById('input').value;
+        let strAfter = chuanHoaString(strBefore);
+        document.getElementById('result').innerHTML = "Hàm trước khi chuẩn hóa: <br>" + strBefore + "<br><hr>Hàm sau khi chuẩn hóa: <br>" + strAfter;
+
+    }
+
+    function findMaxString() {
+        let strAfter = chuanHoaString(document.getElementById('input').value);
+        let strMax = timXauDaiNhat(strAfter);
+        document.getElementById('maxString').innerHTML = "Xâu dài nhất: " + strMax;
+
+    }
+
+    //Hàm này ko áp dụng cho các kí tự có dấu trong tiếng việt
+    function chuanHoaString(string) {
+        let inputStr = string.toString().trim().toLocaleLowerCase();
+        let result = inputStr[0].toLocaleUpperCase();
+        for (let i = 1; i < inputStr.length; i++) {
+            if (inputStr[i] != " ") {
+                result += inputStr[i];
+            } else {
+                if (inputStr[i + 1] == " ") {
+                    continue;
+                } else {
+                    result += " ";
+                    result += inputStr[i + 1].toLocaleUpperCase();
+                    i++;
+                    continue;
+                }
+            }
+        }
+        return result;
+    }
+
+    //Áp dụng với các xâu đã được chuẩn hóa;
+    function timXauDaiNhat(str) {
+        let result = "";
+        let count = 0, max = 0;
+        let maxString = "";
+        let input = str.toString();
+        for (let i = 0; i < input.length; i++) {
+            if (input[i] == " ") {
+                if (count > max) {
+                    max = count;
+                    result = maxString;
+                }
+                count = 0;
+                maxString = "";
+                continue;
+            } else {
+                maxString += input[i];
+                count++;
+            }
+        }
+        if (count > max) {
+            result = maxString;
+        }
+        return result;
+    }
+</script>
+</html>
