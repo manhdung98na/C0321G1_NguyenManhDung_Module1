@@ -6,34 +6,40 @@
     <style>
         body{
             display: block;
-            padding-top: 100px;
-            padding-left: 300px;
+            padding-top: 50px;
+            padding-left: 100px;
         }
     </style>
 </head>
 <body>
+<span>Chiều dài: &nbsp;&nbsp;<input type="number" id="dai"></span><br><br>
+<span>Chiều rộng: <input type="number" id="rong" ></span><br><br>
+<button id="button" onclick="execute()">DRAW</button>
 <p id="result"></p>
 </body>
 <script>
-    let chieuDai = 17, chieuRong = 9;
-    let result = "";
-    for (let i = 1; i <= chieuRong; i++) {
-        if (i == 1 || i == chieuRong) {
-            for (let j = 1; j <= chieuDai; j++) {
-                result += "*";
-                if (j != chieuDai){
-                    result += "&nbsp&nbsp";
+    function execute() {
+        let chieuDai = document.getElementById('dai').value;
+        let chieuRong = document.getElementById('rong').value;
+        let result = "";
+        for (let i = 1; i <= chieuRong; i++) {
+            if (i == 1 || i == chieuRong) {
+                for (let j = 1; j <= chieuDai; j++) {
+                    result += "*";
+                    if (j != chieuDai) {
+                        result += "&nbsp&nbsp";
+                    }
                 }
+                result += "<br>";
+            } else {
+                result += "*&nbsp";
+                for (let j = 2; j < chieuDai; j++) {
+                    result += "&nbsp&nbsp&nbsp&nbsp";
+                }
+                result += "&nbsp*<br>";
             }
-            result += "<br>";
-        } else {
-            result += "*&nbsp";
-            for (let j = 2; j < chieuDai; j++){
-                result += "&nbsp&nbsp&nbsp&nbsp";
-            }
-            result += "&nbsp*<br>";
         }
+        document.getElementById('result').innerHTML = result;
     }
-    document.getElementById('result').innerHTML = result;
 </script>
 </html>

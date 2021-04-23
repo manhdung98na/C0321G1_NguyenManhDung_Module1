@@ -6,30 +6,32 @@
     <style>
         body{
             display: block;
-            padding-top: 100px;
+            padding-top: 50px;
             padding-left: 300px;
         }
     </style>
 </head>
 
 <body>
+<span>Chiều cao: <input type="number" id="cao" oninput="execute()"></span><br><br>
 <p id="result"></p>
 </body>
 <script>
-    let chieuCao = 15;
-    let khoangTrang = chieuCao - 1;
-    let result = "";
-    for (let i = 1; i <= chieuCao; i++) {
-        for (let j = 1; j <= khoangTrang; j++) {
-            result += "&nbsp&nbsp&nbsp";
+    function execute() {
+        let chieuCao = document.getElementById('cao').value;
+        let khoangTrang = chieuCao - 1;
+        let result = "";
+        for (let i = 1; i <= chieuCao; i++) {
+            for (let j = 1; j <= khoangTrang; j++) {
+                result += "&nbsp&nbsp&nbsp";
+            }
+            for (let j = 1; j < 2 * i; j++) {
+                result += "&nbsp*";
+            }
+            result += "<br>";
+            khoangTrang--;
         }
-        for (let j = 1; j < 2 * i; j++) {
-            result += "&nbsp*";
-        }
-        result += "<br>";
-        khoangTrang--;
+        document.getElementById('result').innerHTML = result;
     }
-    document.getElementById('result').innerHTML = result;
-
 </script>
 </html>
