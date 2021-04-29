@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra cuối module</title>
+</head>
+<style>
+    body {
+        display: block;
+        text-align: -webkit-center;
+        padding-top: 100px;
+    }
+</style>
+<body>
+
+</body>
+<script>
+    //Nhập kích thước của mảng
+    let inputStr, size;
+    do {
+        inputStr = prompt("Nhập kích thước của mảng kí tự: ");
+        size = parseInt(inputStr);
+        if (size == inputStr && size <= 20 && size > 0) {
+            break;
+        } else {
+            alert("Kích thước của mảng phải là 1 số nằm trong khoảng 1 - 20");
+        }
+    } while (true);
+    let arr = [];
+
+    // nhap ki tu
+    for (let i = 0; i < size; i++) {
+        do {
+            let input = prompt("Nhap 1 ki tu: ");
+            if (input.length != 1) {
+                alert("Chỉ nhập 1 kí tự!");
+                continue;
+            }
+            arr[i] = input;
+            break;
+        } while (true);
+    }
+
+    let result = "Mảng vừa nhập có kích thước = " + arr.length + "<br><b>Array = [" + arr + "]</b><br>";
+
+    //Đếm kí tự
+    let characterArr = [];
+    let countArr = [];
+    let countTemp = 0;
+    for (let i = 0; i < arr.length; i++) {
+        let isTonTai = false;
+        for (let ele of characterArr) {
+            if (ele == arr[i]) {
+                isTonTai = true;
+                break;
+            }
+        }
+        if (isTonTai == false) {
+            for (let j = 0; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
+                    countTemp++;
+                }
+            }
+            characterArr.push(arr[i]);
+            countArr.push(countTemp);
+            countTemp = 0;
+        }
+    }
+
+    //In kết quả
+    for (let i = 0; i < characterArr.length; i++) {
+        let kiTu;
+        if (characterArr[i] == " ") {
+            kiTu = "khoảng trắng";
+        } else {
+            kiTu = characterArr[i];
+        }
+        result += "<br>Kí tự : " + kiTu + " xuất hiện " + countArr[i] + " lần";
+    }
+    document.write(result);
+</script>
+</html>

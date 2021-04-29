@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<style>
+</style>
+<body>
+
+</body>
+<script>
+    //Lớp sản phẩm
+    class Product {
+        maSanPham;
+        tenSanPham;
+        hangSanXuat;
+        gia;
+
+        constructor(ma, ten, hang, gia) {
+            this.maSanPham = ma;
+            this.tenSanPham = ten;
+            this.hangSanXuat = hang;
+            this.gia = gia;
+        }
+
+        setMaSanPham(maSanPham) {
+            this.maSanPham = maSanPham;
+        }
+
+        getMaSanPham() {
+            return this.maSanPham;
+        }
+
+        setTenSanPham(tenSanPham) {
+            this.tenSanPham = tenSanPham;
+        }
+
+        getTenSanPham() {
+            return this.tenSanPham;
+        }
+
+        setHangSanXuat(hangSanXuat) {
+            this.hangSanXuat = hangSanXuat;
+        }
+
+        getHangSanXuat() {
+            return this.hangSanXuat;
+        }
+
+        setGia(gia) {
+            this.gia = gia;
+        }
+
+        getGia() {
+            return this.gia;
+        }
+
+        toString() {
+            return "Sản phẩm: " + this.getTenSanPham() + "&nbsp&nbsp&nbspMã: " + this.getMaSanPham()
+                + "\t&nbsp&nbsp&nbspHãng sản xuất: " + this.getHangSanXuat() + "&nbsp&nbsp&nbspGiá tiền: " + this.getGia();
+        }
+    }
+
+    //Chương trình quản lý sản phẩm:
+    let arrProduct = [];
+    let product1 = new Product("Laptop01", "Dell Inspiron 5559", "VietNam", 15000000);
+    arrProduct.push(product1);
+    let product2 = new Product("Laptop01", "Asus gaming laptop", "VietNam", 23000000);
+    arrProduct.push(product2);
+    let string = "";
+    for (let ele of arrProduct) {
+        string += ele.toString() + "<br>";
+    }
+    document.write(string);
+</script>
+</html>

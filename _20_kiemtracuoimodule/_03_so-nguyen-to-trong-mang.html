@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<style>
+</style>
+<body>
+
+</body>
+<script>
+    //Nhập kích thước của mảng
+    let inputStr, size;
+    do {
+        inputStr = prompt("Nhập kích thước của mảng: ");
+        size = parseInt(inputStr);
+        if (size == inputStr && size > 0) {
+            break;
+        } else {
+            alert("Kích thước của mảng phải là 1 số >= 0");
+        }
+    } while (true);
+    //Nhập mảng
+    let arr = [];
+    for (let i=0; i<size;i++){
+        let inputString = prompt("arr[" + i + "] = ");
+        if (inputString == parseInt(inputString)){
+            arr.push(parseInt(inputString));
+        }
+    }
+
+    // let arr = [1, 5, 6, 23, 8, 47, 10, 3, 17];
+    alert(timSoNguyenTo(arr));
+
+    function timSoNguyenTo(array) {
+        let resultArr = [];
+        for (let i = 0; i < array.length; i++) {
+            if (checkSNT(array[i])) {
+                resultArr.push(array[i]);
+            }
+        }
+        return resultArr.sort(function (a, b) {
+            return a - b;
+        })
+    }
+
+    function checkSNT(x) {
+        if (x <= 1) return false;
+        for (let i = 2; i <= Math.sqrt(x); i++) {
+            if (x % i == 0) return false; //không phải snt
+        }
+        return true; // là số nguyên tố
+    }
+</script>
+</html>

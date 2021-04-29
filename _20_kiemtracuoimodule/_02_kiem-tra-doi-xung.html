@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<style>
+</style>
+<body>
+
+</body>
+<script>
+    let inputStr = prompt("Nhap chuoi: ");
+    let check = kiemTraDoiXung(inputStr);
+    if (check) {
+        alert("Chuỗi [" + inputStr + "] là chuỗi đối xứng");
+    } else {
+        alert("Chuỗi [" + inputStr + "] là chuỗi KHÔNG đối xứng");
+    }
+
+    function kiemTraDoiXung(string) {
+        for (let i = 0; i < string.length / 2; i++) {
+            if (string[i] != string[string.length - 1 - i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+</script>
+</html>
